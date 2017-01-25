@@ -42,7 +42,7 @@ namespace Collections_Comparison
         {
             readBegin = new Stopwatch();
             readBegin.Start();
-            list.Remove(9);
+           // list.Remove();
             readBegin.Stop();
 
             return new Result(Constants.DICTIONARY, Constants.DELETE_FROM_END, ((double)(readBegin.Elapsed.TotalMilliseconds * 1000000) /
@@ -53,7 +53,7 @@ namespace Collections_Comparison
         {
             readBegin = new Stopwatch();
             readBegin.Start();
-            list.Dequeue();
+            //list.Dequeue();
             readBegin.Stop();
 
             return new Result(Constants.QUEUE, Constants.DELETE_FROM_END, ((double)(readBegin.Elapsed.TotalMilliseconds * 1000000) /
@@ -64,7 +64,7 @@ namespace Collections_Comparison
         {
             readBegin = new Stopwatch();
             readBegin.Start();
-            list.Pop();
+            //list.Pop();
             readBegin.Stop();
 
             return new Result(Constants.STACK, Constants.DELETE_FROM_END, ((double)(readBegin.Elapsed.TotalMilliseconds * 1000000) /

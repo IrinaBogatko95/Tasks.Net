@@ -4,3 +4,9 @@ C:\Users\Iryna_Bahatka1\documents\visual studio 2015\Projects\Collections_Compar
 C:\Users\Iryna_Bahatka1\documents\visual studio 2015\Projects\Collections_Comparison\Collections_Comparison\obj\Debug\Collections_Comparison.csprojResolveAssemblyReference.cache
 C:\Users\Iryna_Bahatka1\documents\visual studio 2015\Projects\Collections_Comparison\Collections_Comparison\obj\Debug\Collections_Comparison.exe
 C:\Users\Iryna_Bahatka1\documents\visual studio 2015\Projects\Collections_Comparison\Collections_Comparison\obj\Debug\Collections_Comparison.pdb
+C:\Users\irina\Documents\Tasks.Net\Collections_Comparison\Collections_Comparison\bin\Debug\Collections_Comparison.exe.config
+C:\Users\irina\Documents\Tasks.Net\Collections_Comparison\Collections_Comparison\obj\Debug\Collections_Comparison.exe
+C:\Users\irina\Documents\Tasks.Net\Collections_Comparison\Collections_Comparison\obj\Debug\Collections_Comparison.pdb
+C:\Users\irina\Documents\Tasks.Net\Collections_Comparison\Collections_Comparison\bin\Debug\Collections_Comparison.exe
+C:\Users\irina\Documents\Tasks.Net\Collections_Comparison\Collections_Comparison\bin\Debug\Collections_Comparison.pdb
+C:\Users\irina\Documents\Tasks.Net\Collections_Comparison\Collections_Comparison\obj\Debug\Collections_Comparison.csprojResolveAssemblyReference.cache

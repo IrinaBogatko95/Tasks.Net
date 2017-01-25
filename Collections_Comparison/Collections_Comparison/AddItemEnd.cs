@@ -50,7 +50,7 @@ class AddItemEnd : AddItem
             readBegin.Start();
             for (int i = 0; i < 100000; i++)
         {
-            // ???
+                list.Add(i, random.Next());
         }
             readBegin.Stop();
 
@@ -76,10 +76,7 @@ class AddItemEnd : AddItem
     {
             readBegin = new Stopwatch();
             readBegin.Start();
-            for (int i = 0; i < 100000; i++)
-        {
-            list.Push(random.Next());
-        }
+           // list.Push(random.Next());
             readBegin.Stop();
 
             return new Result(Constants.STACK, Constants.ADD_TO_END, ((double)(readBegin.Elapsed.TotalMilliseconds * 1000000) /
@@ -104,10 +101,7 @@ class AddItemEnd : AddItem
     {
             readBegin = new Stopwatch();
             readBegin.Start();
-            for (int i = 0; i < 100000; i++)
-        {
             //???
-        }
             readBegin.Stop();
 
             return new Result(Constants.SORTED_DICTIONARY, Constants.ADD_TO_END, ((double)(readBegin.Elapsed.TotalMilliseconds * 1000000) /

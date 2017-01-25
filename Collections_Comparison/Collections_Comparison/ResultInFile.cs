@@ -9,7 +9,7 @@ namespace Collections_Comparison
 {
     class ResultInFile
     {
-        public const string PATH = "D:/File.txt";
+        public const string PATH = "E:/File.txt";
 
         public void WriteToFile(List<Result> resultsToAdd, List<Result> resultsToRead, List<Result> resultsToDelete)
         {       

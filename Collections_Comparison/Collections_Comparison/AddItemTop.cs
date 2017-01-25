@@ -46,11 +46,8 @@ namespace Collections_Comparison
         public override Result AddToDictionary(Dictionary<int, double> list)
         {
             readBegin = new Stopwatch();
-            readBegin.Start();
-            for (int i = 0; i < 100000; i++)
-            {
-               // can't to add
-            }
+            readBegin.Start();            
+            // can't to add
             readBegin.Stop();
 
             return new Result (Constants.DICTIONARY, Constants.ADD_TO_TOP, ((double)(readBegin.Elapsed.TotalMilliseconds * 1000000) /
@@ -61,10 +58,8 @@ namespace Collections_Comparison
         {
             readBegin = new Stopwatch();
             readBegin.Start();
-            for (int i = 0; i < 100000; i++)
-            {
-                // can't to add
-            }
+            // can't to add
+ 
             readBegin.Stop();
 
             return new Result (Constants.QUEUE, Constants.ADD_TO_TOP, ((double)(readBegin.Elapsed.TotalMilliseconds * 1000000) /
@@ -103,10 +98,7 @@ namespace Collections_Comparison
         {
             readBegin = new Stopwatch();
             readBegin.Start();
-            for (int i = 0; i < 100000; i++)
-            {
-               //can' to add
-            }
+            //can' to add         
             readBegin.Stop();
 
             return new Result (Constants.SORTED_DICTIONARY, Constants.ADD_TO_TOP, ((double)(readBegin.Elapsed.TotalMilliseconds * 1000000) /

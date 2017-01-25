@@ -4,3 +4,9 @@ C:\Users\Iryna_Bahatka1\Documents\Visual Studio 2015\Projects\task_2_LINQ\task_2
 C:\Users\Iryna_Bahatka1\Documents\Visual Studio 2015\Projects\task_2_LINQ\task_2_LINQ\obj\Debug\task_2_LINQ.csprojResolveAssemblyReference.cache
 C:\Users\Iryna_Bahatka1\Documents\Visual Studio 2015\Projects\task_2_LINQ\task_2_LINQ\obj\Debug\task_2_LINQ.exe
 C:\Users\Iryna_Bahatka1\Documents\Visual Studio 2015\Projects\task_2_LINQ\task_2_LINQ\obj\Debug\task_2_LINQ.pdb
+C:\Users\irina\Documents\Tasks.Net\task_2_LINQ\task_2_LINQ\bin\Debug\task_2_LINQ.exe.config
+C:\Users\irina\Documents\Tasks.Net\task_2_LINQ\task_2_LINQ\obj\Debug\task_2_LINQ.exe
+C:\Users\irina\Documents\Tasks.Net\task_2_LINQ\task_2_LINQ\obj\Debug\task_2_LINQ.pdb
+C:\Users\irina\Documents\Tasks.Net\task_2_LINQ\task_2_LINQ\obj\Debug\task_2_LINQ.csprojResolveAssemblyReference.cache
+C:\Users\irina\Documents\Tasks.Net\task_2_LINQ\task_2_LINQ\bin\Debug\task_2_LINQ.exe
+C:\Users\irina\Documents\Tasks.Net\task_2_LINQ\task_2_LINQ\bin\Debug\task_2_LINQ.pdb

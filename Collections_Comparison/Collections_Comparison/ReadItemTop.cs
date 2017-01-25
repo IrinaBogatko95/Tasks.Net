@@ -42,10 +42,6 @@ namespace Collections_Comparison
         public override Result ReadFromDictionary(Dictionary<int, double> list)
         {
             readBegin = new Stopwatch();
-            for (int i = 0; i < 100; i++)
-            {
-                list.Add(i, random.Next());
-            }
             readBegin.Start();
             list.First();        
             readBegin.Stop();

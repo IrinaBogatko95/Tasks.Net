@@ -3,26 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 
 namespace task_2_LINQ
 {
     class FibonacciSeries
     {
-        public void GetFibonacci()
+        public IEnumerable<BigInteger> GetFibonacci()
         {
-            Func<long, long, long, IEnumerable<long>> fib = null;
-            fib = (n, m, cap) => n + m > cap ? Enumerable.Empty<long>()
-                : Enumerable.Repeat(n + m, 1).Concat(fib(m, n + m, cap));
-
-            var list = fib(0, 1, 100000000000000).ToList();
-
-            foreach(var fibEx in list)
+            int Range = 10;
+            BigInteger ord1 = 0, ord2 = 0, ord3 = 0;
+            IEnumerable<BigInteger> FibSeries = Enumerable.Range(1, Range).Select(a =>
             {
-                Console.WriteLine(fibEx);
-               
+                ord1 = a == 1 ? 0 : ord2;
+                ord2 = a == 1 ? 1 : ord3;
+                ord3 = a == 1 ? 0 : ord1 + ord2;
+                return ord3;
+            });
+            foreach (BigInteger number in FibSeries)
+            {
+                Console.WriteLine(number);
             }
-            Console.ReadKey();
-
+            
+            return FibSeries;
         }
     }
 }
