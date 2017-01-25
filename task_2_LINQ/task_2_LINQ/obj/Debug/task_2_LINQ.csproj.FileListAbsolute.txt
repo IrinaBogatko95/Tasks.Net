@@ -1,0 +1,6 @@
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\task_2_LINQ\task_2_LINQ\bin\Debug\task_2_LINQ.exe.config
+C:\Users\Iryna_Bahatka1\Documents\Visual Studio 2015\Projects\task_2_LINQ\task_2_LINQ\bin\Debug\task_2_LINQ.exe
+C:\Users\Iryna_Bahatka1\Documents\Visual Studio 2015\Projects\task_2_LINQ\task_2_LINQ\bin\Debug\task_2_LINQ.pdb
+C:\Users\Iryna_Bahatka1\Documents\Visual Studio 2015\Projects\task_2_LINQ\task_2_LINQ\obj\Debug\task_2_LINQ.csprojResolveAssemblyReference.cache
+C:\Users\Iryna_Bahatka1\Documents\Visual Studio 2015\Projects\task_2_LINQ\task_2_LINQ\obj\Debug\task_2_LINQ.exe
+C:\Users\Iryna_Bahatka1\Documents\Visual Studio 2015\Projects\task_2_LINQ\task_2_LINQ\obj\Debug\task_2_LINQ.pdb
