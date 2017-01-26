@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Collections_Comparison
 {
+    /**
+     * Execute operations with collections  
+     **/
     class ExecuteOperations
     {
         List<Result> results;

@@ -14,14 +14,9 @@ namespace task_2_LINQ
             FibonacciSeries fib = new FibonacciSeries();
             IEnumerable<BigInteger> fibSeries = fib.GetFibonacci();
 
-            BigInteger bigInt = new BigInteger();
-            bigInt.SimplicityCheck(fibSeries);
-
             Operations operations = new Operations();
             operations.numbersDividedFive(fibSeries);
-            
-
-                    
+            operations.primeNumbers(fibSeries);                       
         }
     }
 }

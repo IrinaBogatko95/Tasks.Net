@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 
+
 namespace task_2_LINQ
 {
     class Operations
@@ -19,8 +20,21 @@ namespace task_2_LINQ
                     Console.WriteLine("Sequence have numbers that are divisible by 5");
                     break;
                 }
-            }
-            Console.ReadKey();
+            }           
         }
+
+       public int primeNumbers(IEnumerable<BigInteger> fibSeries)
+        {
+            int counter = 0;
+            foreach(BigInteger number in fibSeries)
+            {
+                if(number.SimplicityCheck(number))
+                {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+       
     }
 }

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Collections_Comparison
 {
+    /**
+     * Class consists of result of operations with collections    
+     **/
     class Result
     {
         private string executeTime;

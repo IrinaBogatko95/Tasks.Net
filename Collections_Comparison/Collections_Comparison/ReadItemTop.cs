@@ -9,8 +9,7 @@ namespace Collections_Comparison
 {
     /**
     * Reading an item from the top of the collection    
-    **/
-    
+    **/    
     class ReadItemTop : ReadItem
     {
         const int _max = 1000000;

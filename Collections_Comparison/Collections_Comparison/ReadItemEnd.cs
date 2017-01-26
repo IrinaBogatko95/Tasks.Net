@@ -10,7 +10,6 @@ namespace Collections_Comparison
     /**
     * Reading an item from the end of the collection    
     **/
- 
     class ReadItemEnd : ReadItem
     {
         Stopwatch readBegin;

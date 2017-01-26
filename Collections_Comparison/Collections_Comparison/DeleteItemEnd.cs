@@ -9,8 +9,7 @@ namespace Collections_Comparison
 {
     /**
     * Delete an item from the end of the collection    
-    **/
-   
+    **/ 
     class DeleteItemEnd : DeleteItem
     {
         Stopwatch readBegin;

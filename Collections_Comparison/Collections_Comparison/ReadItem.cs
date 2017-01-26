@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Collections_Comparison
 {
+    /**
+     * Reading an item from the collection    
+    **/
     abstract class ReadItem
     {
         public abstract Result ReadFromList(List<double> list);

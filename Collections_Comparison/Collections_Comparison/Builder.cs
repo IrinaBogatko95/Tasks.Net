@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Collections_Comparison
 {
+    /**
+     * Buiding operations with collections  
+     **/
     class Builder
     {
 

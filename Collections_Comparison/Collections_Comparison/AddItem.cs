@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Collections_Comparison
 {
+    /**
+     * Adding an item to the collection    
+    **/
     abstract class AddItem
     {
         public abstract Result AddToList(List<double> list);

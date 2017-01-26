@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Collections_Comparison
 {
+    /**
+      * Delete an item from the collection    
+      **/
     abstract class DeleteItem
     {
         public abstract Result DeleteFromList(List<double> list);

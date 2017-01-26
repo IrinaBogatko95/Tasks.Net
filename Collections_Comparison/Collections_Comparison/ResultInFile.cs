@@ -7,9 +7,13 @@ using System.Threading.Tasks;
 
 namespace Collections_Comparison
 {
+    /**
+    * Writing result of exeting collection in txt-file  
+    **/
     class ResultInFile
     {
-        public const string PATH = "E:/File.txt";
+        public const string PATH = "D:/File.txt";
+        string spaces = "            ";
 
         public void WriteToFile(List<Result> resultsToAdd, List<Result> resultsToRead, List<Result> resultsToDelete)
         {       
@@ -17,22 +21,21 @@ namespace Collections_Comparison
           
             foreach (Result resultsToWrite in resultsToAdd)
             {                               
-                sw.WriteLine("Operation: " + resultsToWrite.GetNameOperation() + "            "  + 
-                    "Collection: " + resultsToWrite.GetNameCollection() + "             " + " executed time: "  + resultsToWrite.GetExecuteTime()); 
+                sw.WriteLine($"Operation: {resultsToWrite.GetNameOperation()}{spaces}\nCollection: {resultsToWrite.GetNameCollection()}{spaces}executed time: {resultsToWrite.GetExecuteTime()}"); 
                 sw.WriteLine("-----------------------------------------------------------------------------------------");                     
             }
                         
             foreach (Result resultsToWrite in resultsToRead)
             {
-                sw.WriteLine("Operation: " + resultsToWrite.GetNameOperation() + "            " +
-                     "Collection: " + resultsToWrite.GetNameCollection() + "             " + " executed time: " + resultsToWrite.GetExecuteTime());
+                sw.WriteLine("Operation: " + resultsToWrite.GetNameOperation() + spaces +
+                     "Collection: " + resultsToWrite.GetNameCollection() + spaces + " executed time: " + resultsToWrite.GetExecuteTime());
                 sw.WriteLine("----------------------------------------------------------------------------------------");
             }
            
             foreach (Result resultsToWrite in resultsToDelete)
             {
-                sw.WriteLine("Operation: " + resultsToWrite.GetNameOperation() + "            " +
-                                    "Collection: " + resultsToWrite.GetNameCollection() + "             " + " executed time: " + resultsToWrite.GetExecuteTime());
+                sw.WriteLine("Operation: " + resultsToWrite.GetNameOperation() + spaces +
+                                    "Collection: " + resultsToWrite.GetNameCollection() + spaces + " executed time: " + resultsToWrite.GetExecuteTime());
                 sw.WriteLine("----------------------------------------------------------------------------------------");
             }
             sw.Close();
