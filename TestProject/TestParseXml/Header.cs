@@ -7,13 +7,24 @@ using System.Threading.Tasks;
 namespace TestParseXml
 {
     class Header
-    {   
-        private string header;
+    {
+        private List<HeaderItem> allHeaders;
+        private string nameJournal;
 
-        public Header(string header)
+        public Header(List<HeaderItem> allHeaders)
         {
-            this.header = header;
-          
+           
+            this.allHeaders = allHeaders;       
+        }
+
+        public List<HeaderItem> getAllHeaders()
+        {
+            return allHeaders;
+        }
+
+        public string getNameJournal()
+        {
+            return nameJournal;
         }
     }
 }

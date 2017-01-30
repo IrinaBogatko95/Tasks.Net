@@ -8,5 +8,17 @@ namespace TestParseXml
 {
     class HeaderItem
     {
+
+        private string itemOfHeader;
+
+        public HeaderItem(string item)
+        {
+            this.itemOfHeader = item;        
+        }
+
+        public string getItem()
+        {
+            return itemOfHeader;
+        }
     }
 }

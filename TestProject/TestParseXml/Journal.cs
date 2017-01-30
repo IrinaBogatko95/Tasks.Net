@@ -8,11 +8,24 @@ namespace TestParseXml
 {
     class Journal
     {
-        private string journalName; 
+        private string nameJournal;
+        private List<Header> allHeaders;
 
-        public Journal(string name)
+        public Journal(string nameJournal, List<Header> allHeaders)
         {
-            journalName = name;
+            this.nameJournal = nameJournal;
+            this.allHeaders = allHeaders;            
+        }
+
+        public string getNameJournal()
+        {
+            return nameJournal;
+        }
+
+      
+        public List<Header> getAllHeaders()
+        {
+            return allHeaders;
         }
     }
 }

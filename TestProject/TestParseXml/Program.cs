@@ -18,13 +18,17 @@ namespace TestParseXml
         [STAThread]
         static void Main()
         {
+            TestClass test = new TestClass();
+            test.someMethod();
+            
+            /*
             List<string> list = new List<string>();
             List<Header> headers = new List<Header>();
             List<HeaderItem> headersitem = new List<HeaderItem>();
             Journal journal;
             //Create COM Objects. Create a COM object for everything that is referenced
             Excel.Application xlApp = new Excel.Application();
-            Excel.Workbook xlWorkbook = xlApp.Workbooks.Open("D:\\Framework\\Styling\\Responsive-Batch-3.xlsx");
+            Excel.Workbook xlWorkbook = xlApp.Workbooks.Open("C:\\Users\\irina\\Documents\\additionals\\Styling\\Responsive-Batch-3.xlsx");
             Excel._Worksheet xlWorksheet;
             for (int k = 1; k < xlWorkbook.Worksheets.Count; k++)
             {
@@ -35,20 +39,19 @@ namespace TestParseXml
                 int rowCount = xlRange.Rows.Count;
                 int colCount = xlRange.Columns.Count;
 
-                //iterate over the rows and columns and print to the console as it appears in the file
-                //excel is not zero based!!    
-
                     for (int i = 1; i <= colCount; i++)
                     {
+                    while (xlRange.Rows.Count != null) {
                         for (int j = 1; j <= rowCount; j++)
                         {
-                        if (i == 2)
-                        {
-                            headers.Add(xlRange.Cells[i, j].Value2.ToString());
-                        }
-                        else
-                        {
-                            headersitem.Add(xlRange.Cells[i, j].Value2.ToString());
+                            if (i == 2)
+                            {
+                                headers.Add(xlRange.Cells[i, j].Value2.ToString());
+                            }
+                            else
+                            {
+                                headersitem.Add(xlRange.Cells[i, j].Value2.ToString());
+                            }
                         }
                      }
                  }
@@ -82,7 +85,7 @@ namespace TestParseXml
                 //quit and release
                 xlApp.Quit();
                 Marshal.ReleaseComObject(xlApp);
-            
+            */
         }
     }
 }
