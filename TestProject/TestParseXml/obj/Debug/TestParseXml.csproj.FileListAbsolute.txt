@@ -1,0 +1,9 @@
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\TestParseXml\TestParseXml\bin\Debug\TestParseXml.exe.config
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\TestParseXml\TestParseXml\bin\Debug\TestParseXml.exe
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\TestParseXml\TestParseXml\bin\Debug\TestParseXml.pdb
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\TestParseXml\TestParseXml\obj\Debug\TestParseXml.csprojResolveAssemblyReference.cache
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\TestParseXml\TestParseXml\obj\Debug\TestParseXml.csproj.ResolveComReference.cache
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\TestParseXml\TestParseXml\obj\Debug\TestParseXml.Properties.Resources.resources
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\TestParseXml\TestParseXml\obj\Debug\TestParseXml.csproj.GenerateResource.Cache
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\TestParseXml\TestParseXml\obj\Debug\TestParseXml.exe
+c:\users\iryna_bahatka1\documents\visual studio 2015\Projects\TestParseXml\TestParseXml\obj\Debug\TestParseXml.pdb
