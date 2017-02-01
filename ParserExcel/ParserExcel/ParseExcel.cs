@@ -16,7 +16,7 @@ namespace ParserExcel
         public static object[,] valueArray;
         public static Journal journal;
 
-        public static void Parser(String path)
+        public static List<Journal> Parser(String path)
         {
             // Reference to Excel Application.
             Excel.Application xlApp = new Excel.Application();
@@ -48,32 +48,34 @@ namespace ParserExcel
 
             // Release COM object.
             Marshal.FinalReleaseComObject(xlApp);
+            if(allJournals != null)
+            {
+                return (List<Journal>) allJournals;
+            }
+            return null;        
         }
 
         //Parse and return new journal
         public static Journal ParseJournal(Excel.Worksheet worksheet)
         {
-
-            for (int col = 1; col <= worksheet.UsedRange.Columns.Count; ++col)
-            {
-                header = new Header();
-                if (xlRange.Cells[2, col] != null && xlRange.Cells[2, col].Value2 != null)
+            int col = 1;
+            header = new Header();
+                while ( xlRange.Cells[col, 2].Value != null)
                 {
-                    header.HeaderName = valueArray[2, col].ToString();
-                }
-                for (int row = 3; row <= worksheet.UsedRange.Rows.Count; ++row)
-                {
-                    if (xlRange.Cells[row, col] != null && xlRange.Cells[row, col].Value2 != null)
+                    header.HeaderName = valueArray[col, 2].ToString();
+                    int row = 3;
+                    while (xlRange.Cells[col, row].Value != null)
                     {
-                        header.AddItem(new HeaderItem(valueArray[row, col].ToString()));
-                    }
-                    else
-                    {
-                        break;
-                    }
+                     header.AddItem(new HeaderItem(valueArray[col, row].ToString()));
+                    //header.Items.Add(new HeaderItem(valueArray[col, row].ToString()));
+                    ++row;
                 }
                 journal.AddHeader(header);
+                
+                ++col;
             }
+                
+                        
             return journal;
         }
     }

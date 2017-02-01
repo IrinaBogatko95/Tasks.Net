@@ -11,6 +11,10 @@ namespace ParserExcel
         private string nameJournal;
         private List<Header> allHeaders = new List<Header>();
 
+        public List<Header> Allheaders { get { return allHeaders; } set { allHeaders = value; } }
+
+        public string NameJournal { get { return nameJournal; } set { nameJournal = value; } }
+
         public Journal(string nameJournal)
         {
             this.nameJournal = nameJournal;
@@ -24,6 +28,19 @@ namespace ParserExcel
         public Header GetHeader(int i)
         {
             return allHeaders.ElementAt(i);
+        }
+
+        public int CountNames(List<Header> headers)
+        {
+            int i = 0;
+            foreach(Header res in headers)
+            {
+                if (res.HeaderName != null)
+                {
+                    i++;
+                }     
+            }
+            return i;
         }
     }
 }

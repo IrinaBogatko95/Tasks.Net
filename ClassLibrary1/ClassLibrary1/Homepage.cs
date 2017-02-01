@@ -10,10 +10,6 @@ namespace ClassLibrary1
 {
     class Homepage
     {
-        public By ArticlesAndIssues { get { return By.XPath("//*[@id='zz2_RootAspMenu']/li[1]/a"); } }
-        public By ForAuthors { get { return By.XPath("//*[@id='zz2_RootAspMenu']/li[2]/a"); } }
-        public By JournalInfo { get { return By.XPath("//*[@id='zz2_RootAspMenu']/li[3]/a"); } }
-
         public Homepage()
         {
 
@@ -24,21 +20,20 @@ namespace ClassLibrary1
             WebDriver.Driver.Navigate().GoToUrl(url);
         }
 
-        public IWebElement findFirstElement()
+        public string FindHeader(int i)
         {
-            return WebDriver.Driver.FindElement(ArticlesAndIssues);
+            return IHeader.getHeader(i).Text;
         }
 
-        public IWebElement findSecondElement()
+        public string FindHeaderItem(int i, int j)
         {
-            return WebDriver.Driver.FindElement(ForAuthors);
+            return IHeaderItem.getHeaderItem(i, j).Text;
         }
 
-        public IWebElement findThirdElement()
+        public void Click(int i)
         {
-            return WebDriver.Driver.FindElement(JournalInfo);
+            IHeader.getHeader(i).Click();
         }
-
 
     }
 }

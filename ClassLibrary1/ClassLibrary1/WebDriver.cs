@@ -24,6 +24,7 @@ namespace ClassLibrary1
                 {
                     driver = new ChromeDriver();
                     driver.Manage().Window.Maximize();
+                    
                 }
 
                 return driver;
