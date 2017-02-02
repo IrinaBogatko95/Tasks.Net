@@ -8,12 +8,14 @@ namespace ParserExcel
 {
     public class HeaderItem
     {
-        private string nameItemOfHeader;
-        public string NameItemHeader { get { return nameItemOfHeader; } }
+        private string itemName;
 
-        public HeaderItem(string item)
+        public string ItemName { get { return itemName; } set { itemName = value; } }
+
+        public HeaderItem(string itemName)
         {
-            this.nameItemOfHeader = item;
+            this.itemName = itemName;
         }
+
     }
 }

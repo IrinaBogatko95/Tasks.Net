@@ -8,39 +8,22 @@ namespace ParserExcel
 {
     public class Journal
     {
-        private string nameJournal;
-        private List<Header> allHeaders = new List<Header>();
 
-        public List<Header> Allheaders { get { return allHeaders; } set { allHeaders = value; } }
+        private string journalName;
+        private List<Header> allHeaders;
 
-        public string NameJournal { get { return nameJournal; } set { nameJournal = value; } }
+        public List<Header> AllHeaders { get { return allHeaders; } set { allHeaders = value; } }
+        public string JournalName { get { return journalName; } set { journalName = value; } }
 
-        public Journal(string nameJournal)
+        public Journal(string journalName)
         {
-            this.nameJournal = nameJournal;
+            this.journalName = journalName;
+            allHeaders = new List<Header>();
         }
 
-        public void AddHeader(Header header)
+        public void AddHeaderToList(Header header)
         {
             allHeaders.Add(header);
-        }
-
-        public Header GetHeader(int i)
-        {
-            return allHeaders.ElementAt(i);
-        }
-
-        public int CountNames(List<Header> headers)
-        {
-            int i = 0;
-            foreach(Header res in headers)
-            {
-                if (res.HeaderName != null)
-                {
-                    i++;
-                }     
-            }
-            return i;
         }
     }
 }

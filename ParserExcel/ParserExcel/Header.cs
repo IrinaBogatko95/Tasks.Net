@@ -9,16 +9,20 @@ namespace ParserExcel
     public class Header
     {
         private string headerName;
-        private List<HeaderItem> items = new List<HeaderItem>();
+        private List<HeaderItem> items;
 
         public string HeaderName { get { return headerName; } set { headerName = value; } }
         public List<HeaderItem> Items { get { return items; } set { items = value; } }
 
-
-        public void AddItem(HeaderItem item)
+        public Header(string headerName)
         {
-           items.Add(item);
+            this.headerName = headerName;
+            items = new List<HeaderItem>();
         }
 
+        public void AddItemToList(HeaderItem headerItem)
+        {
+            items.Add(headerItem);
+        }
     }
 }

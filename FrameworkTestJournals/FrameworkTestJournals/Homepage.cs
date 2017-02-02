@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
-namespace ClassLibrary1
+namespace FrameworkTestJournals
 {
     class Homepage
     {
@@ -20,20 +20,9 @@ namespace ClassLibrary1
             WebDriver.Driver.Navigate().GoToUrl(url);
         }
 
-        public string FindHeader(int i)
+        public bool FindElement(string elementName)
         {
-            return IHeader.getHeader(i).Text;
+            return Element.getElement(elementName);
         }
-
-        public string FindHeaderItem(int i, int j)
-        {
-            return IHeaderItem.getHeaderItem(i, j).Text;
-        }
-
-        public void Click(int i)
-        {
-            IHeader.getHeader(i).Click();
-        }
-
     }
 }

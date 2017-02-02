@@ -9,32 +9,29 @@ namespace ParserExcel
 {
     public static class ParseExcel
     {
-        public static Excel.Worksheet xlWorksheet;
-        public static Excel.Workbook xlWorkbook;
         public static Header header;
-        public static Excel.Range xlRange;
-        public static object[,] valueArray;
-        public static Journal journal;
+        public static HeaderItem headerItem;
+        public static Excel.Range xlRange; 
 
-        public static List<Journal> Parser(String path)
+        public static List<Journal> Parser()
         {
+            Excel.Worksheet xlWorksheet;
+            Excel.Workbook xlWorkbook;
+            List<Journal> allJournals = new List<Journal>();
+            Journal journal;       
             // Reference to Excel Application.
             Excel.Application xlApp = new Excel.Application();
-            xlWorkbook = xlApp.Workbooks.Open(Path.GetFullPath(path));
-            List<Journal> allJournals = new List<Journal>();
-
+            xlWorkbook = xlApp.Workbooks.Open(Path.GetFullPath(Settings1.Default.Path));
             //Add all journals to list
             for (int i = 1; i <= xlWorkbook.Sheets.Count; i++)
             {
                 xlWorksheet = (Excel.Worksheet)xlWorkbook.Sheets.get_Item(i);
+                journal = new Journal(xlWorksheet.Name);
+
                 // Get the range of cells which has data.
                 xlRange = xlWorksheet.UsedRange;
-
-                // Get an object array of all of the cells in the worksheet with their values.
-                valueArray = (object[,])xlRange.get_Value(Excel.XlRangeValueDataType.xlRangeValueDefault);
-
-                journal = new Journal(xlWorksheet.Name);
-                allJournals.Add(ParseExcel.ParseJournal(xlWorksheet));
+                ParseExcel.ParseJournal(xlWorksheet, journal);
+                allJournals.Add(journal);
             }
 
             // Close the Workbook.
@@ -48,35 +45,29 @@ namespace ParserExcel
 
             // Release COM object.
             Marshal.FinalReleaseComObject(xlApp);
-            if(allJournals != null)
-            {
-                return (List<Journal>) allJournals;
-            }
-            return null;        
+
+            return allJournals;
+
+
         }
 
         //Parse and return new journal
-        public static Journal ParseJournal(Excel.Worksheet worksheet)
+        public static void ParseJournal(Excel.Worksheet worksheet, Journal journal)
         {
-            int col = 1;
-            header = new Header();
-                while ( xlRange.Cells[col, 2].Value != null)
+            int row = 1;
+            while (xlRange.Cells[2, row].Value != null)
+            {
+                header = new Header(xlRange.Cells[2, row].Text);
+                journal.AddHeaderToList(header);
+                int col = 3;
+                while (xlRange.Cells[col, row].Value != null)
                 {
-                    header.HeaderName = valueArray[col, 2].ToString();
-                    int row = 3;
-                    while (xlRange.Cells[col, row].Value != null)
-                    {
-                     header.AddItem(new HeaderItem(valueArray[col, row].ToString()));
-                    //header.Items.Add(new HeaderItem(valueArray[col, row].ToString()));
-                    ++row;
+                    headerItem = new HeaderItem(xlRange.Cells[col, row].Text);
+                    header.AddItemToList(headerItem);
+                    ++col;
                 }
-                journal.AddHeader(header);
-                
-                ++col;
-            }
-                
-                        
-            return journal;
+                ++row;
+            }         
         }
     }
 }
