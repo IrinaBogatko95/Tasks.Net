@@ -11,7 +11,7 @@ namespace FrameworkTestJournals
     {
         public static bool getElement(string textInElement)
         {
-            return WebDriver.Driver.FindElement(By.XPath($"//div[@id='zz1_TopNavigationMenu']//*[text()='{textInElement}']")).Displayed;
+            return WebDriver.Driver.FindElement(By.XPath($"//div[@id='zz1_TopNavigationMenu']//*[text()=\"{textInElement}\"]")).Enabled;
         }
 
     }

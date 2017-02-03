@@ -10,7 +10,7 @@ namespace FrameworkTestJournals
     [TestFixture]
     class HomepageTests
     {
-        [Test, TestCaseSource(typeof(TestCasesProvider), "TestCaseWithJournals")]
+       [Test, TestCaseSource(typeof(TestCasesProvider), "TestCaseWithJournals")]
         public static void FindHeadersTest(Journal currentJournal)
         {
             Homepage homepage = new Homepage();
@@ -18,7 +18,7 @@ namespace FrameworkTestJournals
 
             foreach (Header currentHeader in currentJournal.AllHeaders)
             {
-                Assert.True(homepage.FindElement(currentHeader.HeaderName), $"Problem in journal{currentJournal.JournalName}");
+                Assert.True(homepage.FindElement(currentHeader.HeaderName), $"Problem in journal {currentJournal.JournalName}");
             }
 
         }
@@ -33,7 +33,7 @@ namespace FrameworkTestJournals
             {
                 foreach (HeaderItem currentItem in currentHeader.Items)
                 {
-                    Assert.True(homepage.FindElement(currentItem.ItemName), $"Problem in journal{currentJournal.JournalName}");
+                    Assert.True(homepage.FindElement(currentItem.ItemName), $"Problem in journal {currentJournal.JournalName}");
                 }
             }
         }
