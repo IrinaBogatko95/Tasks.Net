@@ -4,70 +4,67 @@ using System.Linq;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.IO;
 using System.Runtime.InteropServices;
+using ParserExcel.LogIn;
 
 namespace ParserExcel
 {
     public static class ParseExcel
     {
-        public static Header header;
-        public static HeaderItem headerItem;
-        public static Excel.Range xlRange; 
+        public static Excel.Worksheet xlWorksheet;
+        public static Excel.Application xlApp;
 
-        public static List<Journal> Parser()
+        //Parse excel-file with journals ans returns list with all parsed journals
+        public static List<Journal> ParserForJournal(string path)
         {
-            Excel.Worksheet xlWorksheet;
-            Excel.Workbook xlWorkbook;
             List<Journal> allJournals = new List<Journal>();
-            Journal journal;       
-            // Reference to Excel Application.
-            Excel.Application xlApp = new Excel.Application();
-            xlWorkbook = xlApp.Workbooks.Open(Path.GetFullPath(Settings1.Default.Path));
-            //Add all journals to list
+
+            Excel.Workbook xlWorkbook = OpenWorkbook(path);
+
             for (int i = 1; i <= xlWorkbook.Sheets.Count; i++)
             {
                 xlWorksheet = (Excel.Worksheet)xlWorkbook.Sheets.get_Item(i);
-                journal = new Journal(xlWorksheet.Name);
-
-                // Get the range of cells which has data.
-                xlRange = xlWorksheet.UsedRange;
-                ParseExcel.ParseJournal(xlWorksheet, journal);
+                Journal journal = ParseCurrentSheet.ParseOneJournal(xlWorksheet);
                 allJournals.Add(journal);
             }
+            CloseWorkbook(xlWorkbook);
 
-            // Close the Workbook.
+            return allJournals;
+        }
+
+        //Parse excel-file with usernames and passwords
+        public static List<LogInUser> ParserForLogIn(string path)
+        {
+            Excel.Workbook xlWorkbook = OpenWorkbook(path);
+
+            xlWorksheet = (Excel.Worksheet)xlWorkbook.Sheets.get_Item(1);
+            List<LogInUser> allUsers = ParseCurrentSheet.ParseDataForLogIn(xlWorksheet);
+              
+            CloseWorkbook(xlWorkbook);
+
+            return allUsers;
+        }
+
+
+        public static Excel.Workbook OpenWorkbook(string path)
+        {
+            // Reference to Excel Application.
+            xlApp = new Excel.Application();
+
+            return xlApp.Workbooks.Open(Path.GetFullPath(path));
+        }
+
+
+        public static void CloseWorkbook(Excel.Workbook xlWorkbook)
+        {
             xlWorkbook.Close(false);
 
             // Relase COM Object by decrementing the reference count.
             Marshal.ReleaseComObject(xlWorkbook);
 
-            // Close Excel application.
             xlApp.Quit();
 
             // Release COM object.
             Marshal.FinalReleaseComObject(xlApp);
-
-            return allJournals;
-
-
-        }
-
-        //Parse and return new journal
-        public static void ParseJournal(Excel.Worksheet worksheet, Journal journal)
-        {
-            int row = 1;
-            while (xlRange.Cells[2, row].Value != null)
-            {
-                header = new Header(xlRange.Cells[2, row].Text);
-                journal.AddHeaderToList(header);
-                int col = 3;
-                while (xlRange.Cells[col, row].Value != null)
-                {
-                    headerItem = new HeaderItem(xlRange.Cells[col, row].Text);
-                    header.AddItemToList(headerItem);
-                    ++col;
-                }
-                ++row;
-            }         
         }
     }
 }

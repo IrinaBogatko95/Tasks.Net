@@ -4,25 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
 
 namespace FrameworkTestJournals
 {
-    class Homepage
+    class HomePage
     {
-        public Homepage()
+        public IWebElement LoginInput { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'txt_UserName')]")); } }
+        public IWebElement PasswordInput { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'txt_Password')]")); } }
+        public IWebElement LoginButton { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'LoginButton')]")); } }
+
+        public IWebElement LogoutButton { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'Logout')]")); } }
+
+        public IWebElement ErrorMessage { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'LoginSuccess')]")); } }
+
+
+        public string HomePageUrl { get { return "http://journals.lww.com/pages/default.aspx"; } }
+
+        //*[@id="ctl00_ctl45_g_e504d159_38de_4cbf_9f4d_b2c12b300979_ctl00_rfvUserName"]/div/p
+        //*[@id="ctl00_ctl45_g_e504d159_38de_4cbf_9f4d_b2c12b300979_ctl00_rfvPassword"]/div/p
+
+        public HomePage()
         {
 
         }
 
-        public void NavigateHere(String url)
+        public void Login(string user, string pasw)
         {
-            WebDriver.Driver.Navigate().GoToUrl(url);
+            LoginInput.SendKeys(user);
+            PasswordInput.SendKeys(pasw);
+            LoginButton.Click();
         }
 
-        public bool FindElement(string elementName)
+        public void NavigateHere()
         {
-            return Element.getElement(elementName);
+            WebDriver.Driver.Navigate().GoToUrl(HomePageUrl);
+        }
+
+        public string CurrentURL()
+        {
+            return WebDriver.Driver.Url;
         }
     }
 }

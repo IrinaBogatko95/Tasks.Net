@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FrameworkTestJournals" GeneratedClassName="SettingsPath">
+  <Profiles />
+  <Settings>
+    <Setting Name="Path_Batch3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\\Framework\\Styling\\Responsive-Batch-3.xlsx</Value>
+    </Setting>
+    <Setting Name="UsersPositive" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\\Framework\\PositiveLogInInfo.xlsx</Value>
+    </Setting>
+    <Setting Name="UsersNegative" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\\Framework\\NegativeLogInInfo.xlsx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

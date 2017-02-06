@@ -8,39 +8,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ParserExcel {
+namespace FrameworkTestJournals {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    internal sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class SettingsPath : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
+        private static SettingsPath defaultInstance = ((SettingsPath)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new SettingsPath())));
         
-        public static Settings1 Default {
+        public static SettingsPath Default {
             get {
                 return defaultInstance;
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Framework\\\\Styling\\\\Responsive-Batch-3.xlsx")]
-        public string Batch3 {
+        public string Path_Batch3 {
             get {
-                return ((string)(this["Batch3"]));
+                return ((string)(this["Path_Batch3"]));
+            }
+            set {
+                this["Path_Batch3"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Framework\\\\PositiveLogInInfo.xlsx")]
-        public string PositiveLogInInfo {
+        public string UsersPositive {
             get {
-                return ((string)(this["PositiveLogInInfo"]));
+                return ((string)(this["UsersPositive"]));
             }
             set {
-                this["PositiveLogInInfo"] = value;
+                this["UsersPositive"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Framework\\\\NegativeLogInInfo.xlsx")]
+        public string UsersNegative {
+            get {
+                return ((string)(this["UsersNegative"]));
+            }
+            set {
+                this["UsersNegative"] = value;
             }
         }
     }

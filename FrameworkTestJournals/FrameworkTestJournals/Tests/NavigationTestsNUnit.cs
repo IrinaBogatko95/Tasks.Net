@@ -4,16 +4,17 @@ using System.Linq;
 using NUnit.Framework;
 using ParserExcel;
 using System.Collections;
+using FrameworkTestJournals.DataProviders;
 
 namespace FrameworkTestJournals
 {
     [TestFixture]
-    class HomepageTests
+    class NavigationTestsNUnit
     {
-       [Test, TestCaseSource(typeof(TestCasesProvider), "TestCaseWithJournals")]
+     // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeadersTest(Journal currentJournal)
         {
-            Homepage homepage = new Homepage();
+            Navigation homepage = new Navigation();
             homepage.NavigateHere($"http://journals.lww.com/" + currentJournal.JournalName);
 
             foreach (Header currentHeader in currentJournal.AllHeaders)
@@ -23,10 +24,10 @@ namespace FrameworkTestJournals
 
         }
 
-        [Test, TestCaseSource(typeof(TestCasesProvider), "TestCaseWithJournals")]
+       //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeaderItemsTest(Journal currentJournal)
         {
-            Homepage homepage = new Homepage();
+            Navigation homepage = new Navigation();
             homepage.NavigateHere($"http://journals.lww.com/" + currentJournal.JournalName);
 
             foreach (Header currentHeader in currentJournal.AllHeaders)
@@ -42,18 +43,6 @@ namespace FrameworkTestJournals
         public static void Cleanup()
         {
             WebDriver.KillDriver();
-        }
-    }
-
-    public class TestCasesProvider
-    {
-        public static IEnumerable TestCaseWithJournals()
-        {
-            List<Journal> allJournals = ParseExcel.Parser();
-            foreach (Journal currentJournal in allJournals)
-            {
-                yield return new TestCaseData(currentJournal);
-            }
         }
     }
 }

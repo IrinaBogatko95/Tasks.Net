@@ -43,10 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Header.cs" />
-    <Compile Include="HeaderItem.cs" />
-    <Compile Include="Journal.cs" />
+    <Compile Include="Journals\Header.cs" />
+    <Compile Include="Journals\HeaderItem.cs" />
+    <Compile Include="Journals\Journal.cs" />
+    <Compile Include="LogIn\LogInUser.cs" />
+    <Compile Include="LogIn\Password.cs" />
+    <Compile Include="LogIn\UserName.cs" />
+    <Compile Include="ParseCurrentSheet.cs" />
     <Compile Include="ParseExcel.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings1.Designer.cs">
       <AutoGen>True</AutoGen>
