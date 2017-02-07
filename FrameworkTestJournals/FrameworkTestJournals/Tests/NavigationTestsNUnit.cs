@@ -11,35 +11,35 @@ namespace FrameworkTestJournals
     [TestFixture]
     class NavigationTestsNUnit
     {
-     // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+       [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeadersTest(Journal currentJournal)
         {
-            Navigation homepage = new Navigation();
-            homepage.NavigateHere($"http://journals.lww.com/" + currentJournal.JournalName);
+            Navigation navigation = new Navigation("chrome");
+            navigation.NavigateHere(currentJournal.JournalName);
 
             foreach (Header currentHeader in currentJournal.AllHeaders)
             {
-                Assert.True(homepage.FindElement(currentHeader.HeaderName), $"Problem in journal {currentJournal.JournalName}");
+                Assert.True(navigation.FindNavigationElement(currentHeader.HeaderName), $"Problem in journal {currentJournal.JournalName}");
             }
 
         }
 
-       //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+       [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeaderItemsTest(Journal currentJournal)
         {
-            Navigation homepage = new Navigation();
-            homepage.NavigateHere($"http://journals.lww.com/" + currentJournal.JournalName);
+            Navigation navigation = new Navigation("chrome");
+            navigation.NavigateHere(currentJournal.JournalName);
 
             foreach (Header currentHeader in currentJournal.AllHeaders)
             {
                 foreach (HeaderItem currentItem in currentHeader.Items)
                 {
-                    Assert.True(homepage.FindElement(currentItem.ItemName), $"Problem in journal {currentJournal.JournalName}");
+                    Assert.True(navigation.FindNavigationElement(currentItem.ItemName), $"Problem in journal {currentJournal.JournalName}");
                 }
             }
         }
 
-        [TestFixtureTearDown]
+        [OneTimeTearDown]
         public static void Cleanup()
         {
             WebDriver.KillDriver();

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.IE;
 
 
 namespace FrameworkTestJournals
@@ -16,18 +17,34 @@ namespace FrameworkTestJournals
 
         private static IWebDriver driver;
 
-        public static IWebDriver Driver
+        public static IWebDriver Driver { get { return driver; } }
+
+        public static void SetDriver(string nameDriver)
         {
-            get
+            if (driver == null)
             {
-                if (driver == null)
+                switch (nameDriver)
                 {
-                    driver = new ChromeDriver();
-                    driver.Manage().Window.Maximize();
+                    case "chrome":
+                        driver = new ChromeDriver();
+                        driver.Manage().Window.Maximize();
+                        break;
 
+                    case "firefox":
+                        driver = new FirefoxDriver();
+                        driver.Manage().Window.Maximize();
+                        break;
+
+                    case "IE":
+                        driver = new FirefoxDriver();
+                        driver.Manage().Window.Maximize();
+                        break;
+
+                    default:
+                        driver = new ChromeDriver();
+                        driver.Manage().Window.Maximize();
+                        break;
                 }
-
-                return driver;
             }
         }
 
@@ -36,5 +53,6 @@ namespace FrameworkTestJournals
             driver.Quit();
             driver = null;
         }
+
     }
 }

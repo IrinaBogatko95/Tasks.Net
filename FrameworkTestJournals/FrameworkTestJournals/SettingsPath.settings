@@ -11,5 +11,11 @@
     <Setting Name="UsersNegative" Type="System.String" Scope="User">
       <Value Profile="(Default)">D:\\Framework\\NegativeLogInInfo.xlsx</Value>
     </Setting>
+    <Setting Name="SearchPositive" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\\Framework\\PositiveSearch1.xlsx</Value>
+    </Setting>
+    <Setting Name="SearchNegative" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\\Framework\\NegativeSearch.xlsx</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

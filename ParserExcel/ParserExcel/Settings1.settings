@@ -8,5 +8,11 @@
     <Setting Name="PositiveLogInInfo" Type="System.String" Scope="User">
       <Value Profile="(Default)">D:\\Framework\\PositiveLogInInfo.xlsx</Value>
     </Setting>
+    <Setting Name="PositiveSearch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\\Framework\\PositiveSearch1.xlsx</Value>
+    </Setting>
+    <Setting Name="NegativeSearch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\\Framework\\NegativeSearch.xlsx</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

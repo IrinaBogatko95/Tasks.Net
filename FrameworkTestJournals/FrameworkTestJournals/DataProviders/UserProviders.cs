@@ -15,7 +15,6 @@ namespace FrameworkTestJournals.DataProviders
         public static IEnumerable PositiveTestCaseWithUsers()
         {
             List<LogInUser> allUsers = ParseExcel.ParserForLogIn(SettingsPath.Default.UsersPositive);
-
             foreach (LogInUser currentUser in allUsers)
             {
                 yield return new TestCaseData(currentUser);

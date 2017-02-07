@@ -19,22 +19,22 @@ namespace FrameworkTestJournals
         [Test, TestCaseSource(typeof(UserProviders), "PositiveTestCaseWithUsers")]
         public void PositiveLogInTest(LogInUser currenUser)
         {
-            var homePage = new HomePage();
+            var homePage = new HomePage("chrome");
             homePage.NavigateHere();
             homePage.Login(currenUser.CurrentUserName, currenUser.CurrentPassword);
-            Assert.True(homePage.LogoutButton.Displayed);
+            Assert.True(homePage.LogoutButton.Enabled);
         }
 
         [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
         public void NegativeLogInTest(LogInUser currenUser)
         {
-            var homePage = new HomePage();
+            var homePage = new HomePage("chrome");
             homePage.NavigateHere();
             homePage.Login(currenUser.CurrentUserName, currenUser.CurrentPassword);
-            Assert.True(homePage.ErrorMessage.Displayed);
+            Assert.True(homePage.LoginButton.Displayed);
         }
 
-        [TestFixtureTearDown]
+        [OneTimeTearDown]
         public static void Cleanup()
         {
             WebDriver.KillDriver();

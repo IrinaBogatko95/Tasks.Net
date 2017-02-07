@@ -15,17 +15,13 @@ namespace FrameworkTestJournals
 
         public IWebElement LogoutButton { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'Logout')]")); } }
 
-        public IWebElement ErrorMessage { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'LoginSuccess')]")); } }
-
-
+        public string nameBrowser;
         public string HomePageUrl { get { return "http://journals.lww.com/pages/default.aspx"; } }
 
-        //*[@id="ctl00_ctl45_g_e504d159_38de_4cbf_9f4d_b2c12b300979_ctl00_rfvUserName"]/div/p
-        //*[@id="ctl00_ctl45_g_e504d159_38de_4cbf_9f4d_b2c12b300979_ctl00_rfvPassword"]/div/p
-
-        public HomePage()
+        public HomePage(string nameBrowser)
         {
-
+            this.nameBrowser = nameBrowser;
+            WebDriver.SetDriver(nameBrowser);
         }
 
         public void Login(string user, string pasw)

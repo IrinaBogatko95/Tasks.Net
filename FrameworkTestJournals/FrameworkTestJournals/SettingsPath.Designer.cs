@@ -58,5 +58,29 @@ namespace FrameworkTestJournals {
                 this["UsersNegative"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Framework\\\\PositiveSearch1.xlsx")]
+        public string SearchPositive {
+            get {
+                return ((string)(this["SearchPositive"]));
+            }
+            set {
+                this["SearchPositive"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Framework\\\\NegativeSearch.xlsx")]
+        public string SearchNegative {
+            get {
+                return ((string)(this["SearchNegative"]));
+            }
+            set {
+                this["SearchNegative"] = value;
+            }
+        }
     }
 }

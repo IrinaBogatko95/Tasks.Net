@@ -5,20 +5,20 @@ using Excel = Microsoft.Office.Interop.Excel;
 using System.IO;
 using System.Runtime.InteropServices;
 using ParserExcel.LogIn;
+using ParserExcel.Search;
 
 namespace ParserExcel
 {
     public static class ParseExcel
     {
         public static Excel.Worksheet xlWorksheet;
-        public static Excel.Application xlApp;
 
         //Parse excel-file with journals ans returns list with all parsed journals
         public static List<Journal> ParserForJournal(string path)
         {
             List<Journal> allJournals = new List<Journal>();
 
-            Excel.Workbook xlWorkbook = OpenWorkbook(path);
+            Excel.Workbook xlWorkbook = ExcelBook.OpenWorkbook(path);
 
             for (int i = 1; i <= xlWorkbook.Sheets.Count; i++)
             {
@@ -26,7 +26,7 @@ namespace ParserExcel
                 Journal journal = ParseCurrentSheet.ParseOneJournal(xlWorksheet);
                 allJournals.Add(journal);
             }
-            CloseWorkbook(xlWorkbook);
+            ExcelBook.CloseWorkbook(xlWorkbook);
 
             return allJournals;
         }
@@ -34,37 +34,27 @@ namespace ParserExcel
         //Parse excel-file with usernames and passwords
         public static List<LogInUser> ParserForLogIn(string path)
         {
-            Excel.Workbook xlWorkbook = OpenWorkbook(path);
+            Excel.Workbook xlWorkbook = ExcelBook.OpenWorkbook(path);
 
             xlWorksheet = (Excel.Worksheet)xlWorkbook.Sheets.get_Item(1);
-            List<LogInUser> allUsers = ParseCurrentSheet.ParseDataForLogIn(xlWorksheet);
-              
-            CloseWorkbook(xlWorkbook);
+            List<LogInUser> allUsers = ParseCurrentSheet.ParseDataTwoColumns(xlWorksheet);
+
+            ExcelBook.CloseWorkbook(xlWorkbook);
 
             return allUsers;
         }
-
-
-        public static Excel.Workbook OpenWorkbook(string path)
+       
+        //Parse excel-file with searches
+        public static List<SimpleSearch> ParserForSimpleSearch(string path)
         {
-            // Reference to Excel Application.
-            xlApp = new Excel.Application();
+            Excel.Workbook xlWorkbook = ExcelBook.OpenWorkbook(path);
 
-            return xlApp.Workbooks.Open(Path.GetFullPath(path));
-        }
+            xlWorksheet = (Excel.Worksheet)xlWorkbook.Sheets.get_Item(1);
+            List<SimpleSearch> allSearches = ParseCurrentSheet.ParseDataOneColumn(xlWorksheet);
 
+            ExcelBook.CloseWorkbook(xlWorkbook);
 
-        public static void CloseWorkbook(Excel.Workbook xlWorkbook)
-        {
-            xlWorkbook.Close(false);
-
-            // Relase COM Object by decrementing the reference count.
-            Marshal.ReleaseComObject(xlWorkbook);
-
-            xlApp.Quit();
-
-            // Release COM object.
-            Marshal.FinalReleaseComObject(xlApp);
+            return allSearches;
         }
     }
 }

@@ -43,5 +43,29 @@ namespace ParserExcel {
                 this["PositiveLogInInfo"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Framework\\\\PositiveSearch1.xlsx")]
+        public string PositiveSearch {
+            get {
+                return ((string)(this["PositiveSearch"]));
+            }
+            set {
+                this["PositiveSearch"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Framework\\\\NegativeSearch.xlsx")]
+        public string NegativeSearch {
+            get {
+                return ((string)(this["NegativeSearch"]));
+            }
+            set {
+                this["NegativeSearch"] = value;
+            }
+        }
     }
 }

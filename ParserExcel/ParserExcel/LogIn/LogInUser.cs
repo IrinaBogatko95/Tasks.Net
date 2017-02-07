@@ -18,28 +18,6 @@ namespace ParserExcel.LogIn
         {
             this.currentUserName = currentUserName;
             this.currentPassword = currentPassword;
-        }
-
-        //private List<UserName> allUserNames;
-        //private List<Password> allPasswords;
-
-        //public List<UserName> AllUserNames { get { return allUserNames; } set { allUserNames = value; } }
-        //public List<Password> AllPasswords { get { return allPasswords; } set { allPasswords = value; } }
-
-        //public LogInUser()
-        //{
-        //    allUserNames = new List<UserName>();
-        //    allPasswords = new List<Password>();
-        //}
-
-        //public void AddUserNameToList(UserName userName)
-        //{
-        //    allUserNames.Add(userName);
-        //}
-
-        //public void AddPasswordToList(Password password)
-        //{
-        //    allPasswords.Add(password);
-        //}
+        }    
     }
 }

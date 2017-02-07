@@ -1,4 +1,5 @@
 ﻿//using ParserExcel.LogIn;
+//using ParserExcel.Search;
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
@@ -12,11 +13,11 @@
 
 //        public static void Main()
 //        {
-//            List<LogInUser> allUsers = ParseExcel.ParserForLogIn(Settings1.Default.PositiveLogInInfo);
+//            List<SimpleSearch> allSearches = ParseExcel.ParserForSimpleSearch(Settings1.Default.NegativeSearch);
 
-//            foreach (LogInUser res in allUsers)
+//            foreach (SimpleSearch res in allSearches)
 //            {
-//                Console.WriteLine($"{res.CurrentUserName} , {res.CurrentPassword}");
+//                Console.WriteLine(res.SearchQueryName);
 //            }
 //            Console.ReadKey();
 //        }
