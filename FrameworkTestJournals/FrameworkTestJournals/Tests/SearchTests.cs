@@ -13,7 +13,7 @@ namespace FrameworkTestJournals.Tests
     class SearchTests
     {
 
-        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void PositiveSearchWordTest(Journal currentJournal)
         {
             JournalPage journalPage = new JournalPage("chrome");
@@ -21,10 +21,10 @@ namespace FrameworkTestJournals.Tests
             journalPage.CleanSearchBox();
             journalPage.EnterSearchQuery("Journal");
 
-            Assert.True(journalPage.FindSearchElement().Displayed, $"Problem in journal {currentJournal.JournalName}");
+            Assert.True(journalPage.SearchResult.Displayed, $"Problem in journal {currentJournal.JournalName}");
         }
 
-       // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void NegativeSearchWordTest(Journal currentJournal)
         {
             JournalPage journalPage = new JournalPage("chrome");
@@ -41,12 +41,9 @@ namespace FrameworkTestJournals.Tests
             JournalPage journalPage = new JournalPage("chrome");
             journalPage.NavigateHere(currentJournal.JournalName);
             journalPage.CleanSearchBox();
-           // string articleName = journalPage.ArticleName.Text;
-            if (journalPage.ArticleName.Size == null)
-            {
-                journalPage.EnterSearchQuery(journalPage.SecondArticleName.Text);
-                Assert.True(journalPage.FindSearchElement().Displayed, $"Problem in journal {currentJournal.JournalName}");
-            }          
+            journalPage.EnterSearchQuery(journalPage.ArticleName.Text);
+
+            Assert.True(journalPage.SearchResult.Displayed, $"Problem in journal {currentJournal.JournalName}");
         }
 
         [OneTimeTearDown]

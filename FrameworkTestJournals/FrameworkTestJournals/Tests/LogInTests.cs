@@ -3,9 +3,6 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Firefox;
 using System.Text;
 using System.Threading.Tasks;
 using FrameworkTestJournals.DataProviders;
@@ -16,7 +13,7 @@ namespace FrameworkTestJournals
     [TestFixture]
     public class LogInTests
     {
-        //[Test]
+        [Test]
         public void PositiveLogInTest()
         {
             var homePage = new HomePage("chrome");
@@ -25,7 +22,7 @@ namespace FrameworkTestJournals
             Assert.True(homePage.LogoutButton.Enabled);
         }
 
-       // [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
+        [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
         public void NegativeLogInTest(LogInUser currenUser)
         {
             var homePage = new HomePage("chrome");

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParserExcel
 {
+    //Class contains header of journal an list of items of header
     public class Header
     {
         private string headerName;

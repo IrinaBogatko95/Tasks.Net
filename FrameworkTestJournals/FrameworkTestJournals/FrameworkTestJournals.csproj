@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FrameworkTestJournals</RootNamespace>
     <AssemblyName>FrameworkTestJournals</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -77,7 +78,6 @@
     <Compile Include="DataProviders\JournalsProvider.cs" />
     <Compile Include="DataProviders\UserProviders.cs" />
     <Compile Include="PageObject\ElementNavigation.cs" />
-    <Compile Include="PageObject\ElementSearch.cs" />
     <Compile Include="PageObject\HomePage.cs" />
     <Compile Include="SettingsPath.Designer.cs">
       <AutoGen>True</AutoGen>

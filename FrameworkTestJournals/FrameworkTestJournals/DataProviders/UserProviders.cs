@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace FrameworkTestJournals.DataProviders
 {
+    //Provides user with username and password
     class UserProviders
     {
         public static IEnumerable PositiveTestCaseWithUsers()

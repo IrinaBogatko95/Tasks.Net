@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace FrameworkTestJournals.DataProviders
 {
+    //Provides journals one by one
     class JournalsProvider
     {
         public static IEnumerable TestCaseWithJournals()

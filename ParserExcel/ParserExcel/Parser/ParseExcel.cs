@@ -9,6 +9,7 @@ using ParserExcel.Search;
 
 namespace ParserExcel
 {
+    //Parsers for excel-files
     public static class ParseExcel
     {
         public static Excel.Worksheet xlWorksheet;

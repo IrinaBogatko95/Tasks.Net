@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParserExcel.LogIn
 {
+    //Username and password for login
     public class LogInUser
     {
         private string currentUserName;

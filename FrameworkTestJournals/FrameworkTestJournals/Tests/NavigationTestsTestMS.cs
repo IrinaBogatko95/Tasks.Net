@@ -11,7 +11,7 @@ namespace FrameworkTestJournals
     [TestClass]
     class NavigationTestsTestMS
     {
-     //[TestMethod, DataSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        //[TestMethod, DataSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeadersTest(Journal currentJournal)
         {
             JournalPage navigation = new JournalPage("chrome");
@@ -24,7 +24,7 @@ namespace FrameworkTestJournals
 
         }
 
-       //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeaderItemsTest(Journal currentJournal)
         {
             JournalPage navigation = new JournalPage("chrome");

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParserExcel.Search
 {
+    //Class contains some search query
     public class SimpleSearch
     {
         private string searchQueryName;

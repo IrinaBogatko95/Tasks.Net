@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Path_Batch3" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\\Framework\\Styling\\Responsive-Batch-3.xlsx</Value>
+      <Value Profile="(Default)">E:\\Responsive-Batch-3.xlsx</Value>
     </Setting>
     <Setting Name="UsersPositive" Type="System.String" Scope="User">
       <Value Profile="(Default)">D:\\Framework\\PositiveLogInInfo.xlsx</Value>

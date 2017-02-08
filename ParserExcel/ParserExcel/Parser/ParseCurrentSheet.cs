@@ -10,6 +10,7 @@ using ParserExcel.Search;
 
 namespace ParserExcel
 {
+    //Parsers for one sheet in excel
     class ParseCurrentSheet
     {           
         //Parse sheet with journal

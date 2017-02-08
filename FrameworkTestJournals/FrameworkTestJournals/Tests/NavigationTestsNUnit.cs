@@ -11,7 +11,7 @@ namespace FrameworkTestJournals
     [TestFixture]
     class NavigationTestsNUnit
     {
-      // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeadersTest(Journal currentJournal)
         {
             JournalPage navigation = new JournalPage("chrome");
@@ -21,10 +21,9 @@ namespace FrameworkTestJournals
             {
                 Assert.True(navigation.FindNavigationElement(currentHeader.HeaderName), $"Problem in journal {currentJournal.JournalName}");
             }
-
         }
 
-      // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeaderItemsTest(Journal currentJournal)
         {
             JournalPage navigation = new JournalPage("chrome");

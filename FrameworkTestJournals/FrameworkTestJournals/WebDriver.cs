@@ -36,7 +36,7 @@ namespace FrameworkTestJournals
                         break;
 
                     case "IE":
-                        driver = new FirefoxDriver();
+                        driver = new InternetExplorerDriver();
                         driver.Manage().Window.Maximize();
                         break;
 
