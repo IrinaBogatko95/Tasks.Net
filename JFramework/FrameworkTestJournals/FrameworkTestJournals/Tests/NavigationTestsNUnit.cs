@@ -9,6 +9,7 @@ using FrameworkTestJournals.DataProviders;
 namespace FrameworkTestJournals
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.Fixtures)]
     class NavigationTestsNUnit
     {
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]

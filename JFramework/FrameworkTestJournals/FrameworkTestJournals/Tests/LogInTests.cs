@@ -11,6 +11,7 @@ using ParserExcel.LogIn;
 namespace FrameworkTestJournals
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.Fixtures)]
     public class LogInTests
     {
         [Test]
