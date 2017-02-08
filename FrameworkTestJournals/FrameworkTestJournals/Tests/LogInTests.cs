@@ -16,16 +16,16 @@ namespace FrameworkTestJournals
     [TestFixture]
     public class LogInTests
     {
-        [Test, TestCaseSource(typeof(UserProviders), "PositiveTestCaseWithUsers")]
-        public void PositiveLogInTest(LogInUser currenUser)
+        //[Test]
+        public void PositiveLogInTest()
         {
             var homePage = new HomePage("chrome");
             homePage.NavigateHere();
-            homePage.Login(currenUser.CurrentUserName, currenUser.CurrentPassword);
+            homePage.Login("irynabahatka1", "12345678");
             Assert.True(homePage.LogoutButton.Enabled);
         }
 
-        [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
+       // [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
         public void NegativeLogInTest(LogInUser currenUser)
         {
             var homePage = new HomePage("chrome");

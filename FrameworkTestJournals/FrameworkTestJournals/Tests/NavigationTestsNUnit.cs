@@ -11,10 +11,10 @@ namespace FrameworkTestJournals
     [TestFixture]
     class NavigationTestsNUnit
     {
-       [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+      // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeadersTest(Journal currentJournal)
         {
-            Navigation navigation = new Navigation("chrome");
+            JournalPage navigation = new JournalPage("chrome");
             navigation.NavigateHere(currentJournal.JournalName);
 
             foreach (Header currentHeader in currentJournal.AllHeaders)
@@ -24,10 +24,10 @@ namespace FrameworkTestJournals
 
         }
 
-       [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+      // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeaderItemsTest(Journal currentJournal)
         {
-            Navigation navigation = new Navigation("chrome");
+            JournalPage navigation = new JournalPage("chrome");
             navigation.NavigateHere(currentJournal.JournalName);
 
             foreach (Header currentHeader in currentJournal.AllHeaders)

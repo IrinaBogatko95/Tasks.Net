@@ -76,15 +76,16 @@
   <ItemGroup>
     <Compile Include="DataProviders\JournalsProvider.cs" />
     <Compile Include="DataProviders\UserProviders.cs" />
-    <Compile Include="Element.cs" />
-    <Compile Include="HomePage.cs" />
+    <Compile Include="PageObject\ElementNavigation.cs" />
+    <Compile Include="PageObject\ElementSearch.cs" />
+    <Compile Include="PageObject\HomePage.cs" />
     <Compile Include="SettingsPath.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>SettingsPath.settings</DependentUpon>
     </Compile>
     <Compile Include="Tests\LogInTests.cs" />
-    <Compile Include="Navigation.cs" />
+    <Compile Include="PageObject\JournalPage.cs" />
     <Compile Include="Tests\NavigationTestsTestMS.cs" />
     <Compile Include="Tests\NavigationTestsNUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

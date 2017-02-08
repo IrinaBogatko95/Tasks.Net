@@ -13,38 +13,40 @@ namespace FrameworkTestJournals.Tests
     class SearchTests
     {
 
-        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
-        public static void PositiveSearchTest(Journal currentJournal)
+        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        public static void PositiveSearchWordTest(Journal currentJournal)
         {
-            Navigation navigation = new Navigation("chrome");
-            navigation.NavigateHere(currentJournal.JournalName);
-            
-            List<SimpleSearch> allSearches = ParseExcel.ParserForSimpleSearch(SettingsPath.Default.SearchPositive);
+            JournalPage journalPage = new JournalPage("chrome");
+            journalPage.NavigateHere(currentJournal.JournalName);
+            journalPage.CleanSearchBox();
+            journalPage.EnterSearchQuery("Journal");
 
-            foreach (SimpleSearch currentSearch in  allSearches)
-            {
-                navigation.CleanSearchBox();
-                navigation.EnterSearchQuery(currentSearch.SearchQueryName);
-                Assert.True(navigation.FindSearchElement(currentSearch.SearchQueryName), $"Problem in journal {currentJournal.JournalName}");
-            }
+            Assert.True(journalPage.FindSearchElement().Displayed, $"Problem in journal {currentJournal.JournalName}");
+        }
 
+       // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        public static void NegativeSearchWordTest(Journal currentJournal)
+        {
+            JournalPage journalPage = new JournalPage("chrome");
+            journalPage.NavigateHere(currentJournal.JournalName);
+            journalPage.CleanSearchBox();
+            journalPage.EnterSearchQuery("fjng67%&");
+
+            Assert.True(journalPage.ErrorWindow.Enabled, $"Problem in journal {currentJournal.JournalName}");
         }
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
-        public static void NegativeSearchTest(Journal currentJournal)
+        public static void PositiveSearchArticleTest(Journal currentJournal)
         {
-            Navigation navigation = new Navigation("chrome");
-            navigation.NavigateHere(currentJournal.JournalName);
-
-            List<SimpleSearch> allSearches = ParseExcel.ParserForSimpleSearch(SettingsPath.Default.SearchNegative);
-
-            foreach (SimpleSearch currentSearch in allSearches)
+            JournalPage journalPage = new JournalPage("chrome");
+            journalPage.NavigateHere(currentJournal.JournalName);
+            journalPage.CleanSearchBox();
+           // string articleName = journalPage.ArticleName.Text;
+            if (journalPage.ArticleName.Size == null)
             {
-                navigation.CleanSearchBox();
-                navigation.EnterSearchQuery(currentSearch.SearchQueryName);
-                Assert.True(navigation.FindFalseSearchElement(currentSearch.SearchQueryName), $"Problem in journal {currentJournal.JournalName}");
-            }
-
+                journalPage.EnterSearchQuery(journalPage.SecondArticleName.Text);
+                Assert.True(journalPage.FindSearchElement().Displayed, $"Problem in journal {currentJournal.JournalName}");
+            }          
         }
 
         [OneTimeTearDown]

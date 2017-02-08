@@ -7,16 +7,18 @@ using OpenQA.Selenium;
 
 namespace FrameworkTestJournals
 {
+    //Main page of journals.lww.com
     class HomePage
     {
+        public string nameBrowser;
+
+        public string HomePageUrl { get { return "http://journals.lww.com/pages/default.aspx"; } }
+
         public IWebElement LoginInput { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'txt_UserName')]")); } }
         public IWebElement PasswordInput { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'txt_Password')]")); } }
+
         public IWebElement LoginButton { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'LoginButton')]")); } }
-
         public IWebElement LogoutButton { get { return WebDriver.Driver.FindElement(By.XPath("//*[contains(@id, 'Logout')]")); } }
-
-        public string nameBrowser;
-        public string HomePageUrl { get { return "http://journals.lww.com/pages/default.aspx"; } }
 
         public HomePage(string nameBrowser)
         {
