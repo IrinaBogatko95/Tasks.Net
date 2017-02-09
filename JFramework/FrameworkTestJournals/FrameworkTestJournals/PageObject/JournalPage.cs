@@ -14,10 +14,6 @@ namespace FrameworkTestJournals
 
         public string DeafaultUrl { get { return "http://journals.lww.com/"; } }
 
-        public IWebElement SearchTextBox { get { return WebDriver.Driver.FindElement(By.XPath("//*[@id=\"ctl00_SearchBox_txtKeywords\"]")); } }
-        public IWebElement SearchButton { get { return WebDriver.Driver.FindElement(By.XPath(" //*[@id=\"btnGlobalSearchMagnifier\"]")); } }
-        public IWebElement SearchResult { get { return WebDriver.Driver.FindElement(By.XPath($"//*[contains(@id, 'searchResultsSpan')]")); } }
-
         public IWebElement ArticleName { get { return WebDriver.Driver.FindElement(By.XPath(".//article/div/div/header/h4/a")); } }
         public IWebElement ErrorWindow { get { return WebDriver.Driver.FindElement(By.XPath("//*[@id=\"searchResultsSpan\"]/div/div[2]/span[1]/p[1]")); } }
 
@@ -35,17 +31,6 @@ namespace FrameworkTestJournals
         public bool FindNavigationElement(string elementName)
         {
             return ElementNavigation.GetNavigationElement(elementName);
-        }
-
-        public void EnterSearchQuery(string searchQuery)
-        {
-            SearchTextBox.SendKeys(searchQuery);
-            SearchButton.Click();
-        }
-
-        public void CleanSearchBox()
-        {
-            SearchTextBox.Clear();
         }
     }
 }

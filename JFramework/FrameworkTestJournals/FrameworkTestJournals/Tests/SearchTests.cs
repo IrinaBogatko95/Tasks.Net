@@ -11,7 +11,7 @@ using ParserExcel.Search;
 namespace FrameworkTestJournals.Tests
 {
     [TestFixture]
-    [Parallelizable(ParallelScope.Fixtures)]
+   // [Parallelizable(ParallelScope.Fixtures)]
     class SearchTests
     {
 

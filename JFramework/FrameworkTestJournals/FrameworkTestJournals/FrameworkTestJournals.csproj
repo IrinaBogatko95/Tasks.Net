@@ -58,7 +58,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="ParserExcel">
-      <HintPath>..\..\ParserExcel\ParserExcel\bin\Debug\ParserExcel.dll</HintPath>
+      <HintPath>..\..\..\ParserExcel\ParserExcel\bin\Debug\ParserExcel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -79,17 +79,23 @@
     <Compile Include="DataProviders\UserProviders.cs" />
     <Compile Include="PageObject\ElementNavigation.cs" />
     <Compile Include="PageObject\HomePage.cs" />
+    <Compile Include="PageObject\LogInForm.cs" />
+    <Compile Include="PageObject\SearchForm.cs" />
     <Compile Include="SettingsPath.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>SettingsPath.settings</DependentUpon>
     </Compile>
+    <Compile Include="Steps\StepHomePage.cs" />
+    <Compile Include="Steps\StepJournalPage.cs" />
+    <Compile Include="Steps\StepLogIn.cs" />
     <Compile Include="Tests\LogInTests.cs" />
     <Compile Include="PageObject\JournalPage.cs" />
     <Compile Include="Tests\NavigationTestsTestMS.cs" />
     <Compile Include="Tests\NavigationTestsNUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\SearchTests.cs" />
+    <Compile Include="Tests\StepJournalPage.cs" />
     <Compile Include="WebDriver.cs" />
   </ItemGroup>
   <ItemGroup>
