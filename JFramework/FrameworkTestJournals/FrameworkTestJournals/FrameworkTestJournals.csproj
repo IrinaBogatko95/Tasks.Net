@@ -58,7 +58,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="ParserExcel">
-      <HintPath>..\..\..\ParserExcel\ParserExcel\bin\Debug\ParserExcel.dll</HintPath>
+      <HintPath>..\..\ParserExcel\ParserExcel\bin\Debug\ParserExcel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -77,7 +77,6 @@
   <ItemGroup>
     <Compile Include="DataProviders\JournalsProvider.cs" />
     <Compile Include="DataProviders\UserProviders.cs" />
-    <Compile Include="PageObject\ElementNavigation.cs" />
     <Compile Include="PageObject\HomePage.cs" />
     <Compile Include="PageObject\LogInForm.cs" />
     <Compile Include="PageObject\SearchForm.cs" />
@@ -86,9 +85,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>SettingsPath.settings</DependentUpon>
     </Compile>
-    <Compile Include="Steps\StepHomePage.cs" />
-    <Compile Include="Steps\StepJournalPage.cs" />
+    <Compile Include="Steps\StepFind.cs" />
     <Compile Include="Steps\StepLogIn.cs" />
+    <Compile Include="Steps\StepOpen.cs" />
+    <Compile Include="Steps\StepSearch.cs" />
     <Compile Include="Tests\LogInTests.cs" />
     <Compile Include="PageObject\JournalPage.cs" />
     <Compile Include="Tests\NavigationTestsTestMS.cs" />

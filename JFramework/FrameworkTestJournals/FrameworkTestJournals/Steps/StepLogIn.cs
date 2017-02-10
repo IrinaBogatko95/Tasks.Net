@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace FrameworkTestJournals.Steps
 {
-    class StepLogIn 
+     class StepLogIn 
     {
-        LogInForm logInForm;
+        public LogInForm logInForm = new LogInForm();
 
-        public void LogIn(string userName, string password)
-        {
+        public void LogInUser(string userName, string password)
+        {    
             logInForm.Login(userName, password);
         }
 

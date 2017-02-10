@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace FrameworkTestJournals.Steps
 {
-    class StepHomePage
+    static class StepOpen
     {
-        public void OpenHomePage()
+
+        public static void OpenPageWithJournal(string journal)
+        {
+            var journalPage = new JournalPage("chrome");
+            journalPage.NavigateHere(journal);
+        }
+
+        public static void OpenHomePage()
         {
             var homePage = new HomePage("chrome");
             homePage.NavigateHere();

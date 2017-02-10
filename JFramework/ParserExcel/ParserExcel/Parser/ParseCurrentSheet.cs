@@ -20,19 +20,17 @@ namespace ParserExcel
             Excel.Range xlRange = worksheet.UsedRange;
             int row = 1;
             while (xlRange.Cells[2, row].Value != null)
-            {
-                Header header = new Header(xlRange.Cells[2, row].Text);
-                journal.AddHeaderToList(header);
-                int col = 3;
+            {               
+                int col = 2;
                 while (xlRange.Cells[col, row].Value != null)
                 {
-                    HeaderItem headerItem = new HeaderItem(xlRange.Cells[col, row].Text);
-                    header.AddItemToList(headerItem);
+                    Menu menu = new Menu(xlRange.Cells[col, row].Text);
+                    journal.AddMenuToList(menu);
                     ++col;
                 }
                 ++row;
             }
-            return journal;         
+            return journal;
         }
 
         //Parse excel-sheet with data in two columns

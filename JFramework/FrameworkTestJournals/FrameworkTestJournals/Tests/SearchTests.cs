@@ -7,6 +7,7 @@ using NUnit.Framework;
 using ParserExcel;
 using FrameworkTestJournals.DataProviders;
 using ParserExcel.Search;
+using FrameworkTestJournals.Steps;
 
 namespace FrameworkTestJournals.Tests
 {
@@ -18,34 +19,32 @@ namespace FrameworkTestJournals.Tests
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void PositiveSearchWordTest(Journal currentJournal)
         {
-            JournalPage journalPage = new JournalPage("chrome");
-            journalPage.NavigateHere(currentJournal.JournalName);
-            journalPage.CleanSearchBox();
-            journalPage.EnterSearchQuery("Journal");
+            StepOpen.OpenPageWithJournal(currentJournal.JournalName);
+            StepSearch.SearchQuery("Journal");
 
-            Assert.True(journalPage.SearchResult.Displayed, $"Problem in journal {currentJournal.JournalName}");
+            Assert.True(StepFind.SearchResultIsDisplayed(), $"Problem in journal {currentJournal.JournalName}");
         }
 
-        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void NegativeSearchWordTest(Journal currentJournal)
         {
             JournalPage journalPage = new JournalPage("chrome");
             journalPage.NavigateHere(currentJournal.JournalName);
-            journalPage.CleanSearchBox();
-            journalPage.EnterSearchQuery("fjng67%&");
+           // journalPage.CleanSearchBox();
+          //  journalPage.EnterSearchQuery("fjng67%&");
 
             Assert.True(journalPage.ErrorWindow.Enabled, $"Problem in journal {currentJournal.JournalName}");
         }
 
-        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+       // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void PositiveSearchArticleTest(Journal currentJournal)
         {
             JournalPage journalPage = new JournalPage("chrome");
             journalPage.NavigateHere(currentJournal.JournalName);
-            journalPage.CleanSearchBox();
-            journalPage.EnterSearchQuery(journalPage.ArticleName.Text);
+          //  journalPage.CleanSearchBox();
+         //   journalPage.EnterSearchQuery(journalPage.ArticleName.Text);
 
-            Assert.True(journalPage.SearchResult.Displayed, $"Problem in journal {currentJournal.JournalName}");
+           // Assert.True(journalPage.SearchResult.Displayed, $"Problem in journal {currentJournal.JournalName}");
         }
 
         [OneTimeTearDown]

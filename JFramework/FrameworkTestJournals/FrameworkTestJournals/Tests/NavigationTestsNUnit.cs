@@ -12,31 +12,16 @@ namespace FrameworkTestJournals
     [TestFixture]
     class NavigationTestsNUnit
     {
-        StepJournalPage stepJP = new StepJournalPage();
+       public StepFind stepFind = new StepFind();
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
-        public static void FindHeadersTest(Journal currentJournal)
+        public void FindMenuTest(Journal currentJournal)
         {
-            stepJP
-
-            foreach (Header currentHeader in currentJournal.AllHeaders)
+            StepOpen.OpenPageWithJournal(currentJournal.JournalName);
+            
+            foreach (Menu currentMenu in currentJournal.AllMenu)
             {
-                Assert.True(journalPage.FindNavigationElement(currentHeader.HeaderName), $"Problem in journal {currentJournal.JournalName}");
-            }
-        }
-
-        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
-        public static void FindHeaderItemsTest(Journal currentJournal)
-        {
-            JournalPage journalPage = new JournalPage("chrome");
-            journalPage.NavigateHere(currentJournal.JournalName);
-
-            foreach (Header currentHeader in currentJournal.AllHeaders)
-            {
-                foreach (HeaderItem currentItem in currentHeader.Items)
-                {
-                    Assert.True(journalPage.FindNavigationElement(currentItem.ItemName), $"Problem in journal {currentJournal.JournalName}");
-                }
+                Assert.True(stepFind.MenuNavigationIsEnabled(currentMenu.MenuName), $"Problem in journal {currentJournal.JournalName}");
             }
         }
 

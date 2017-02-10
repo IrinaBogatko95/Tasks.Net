@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace ParserExcel
 {
-    //Journal contains name of journal and list with headers in navigation
+    //Journal contains name of journal and list with menu in navigation
     public class Journal
     {
 
         private string journalName;
-        private List<Header> allHeaders;
+        private List<Menu> allMenu;
 
-        public List<Header> AllHeaders { get { return allHeaders; } set { allHeaders = value; } }
+        public List<Menu> AllMenu { get { return allMenu; } set { allMenu = value; } }
         public string JournalName { get { return journalName; } set { journalName = value; } }
 
         public Journal(string journalName)
         {
             this.journalName = journalName;
-            allHeaders = new List<Header>();
+            allMenu = new List<Menu>();
         }
 
-        public void AddHeaderToList(Header header)
+        public void AddMenuToList(Menu header)
         {
-            allHeaders.Add(header);
+            allMenu.Add(header);
         }
     }
 }

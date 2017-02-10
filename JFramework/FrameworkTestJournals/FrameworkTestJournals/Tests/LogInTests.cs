@@ -14,22 +14,22 @@ namespace FrameworkTestJournals
     [TestFixture]
     public class LogInTests
     {
-        StepLogIn step = new StepLogIn();
+        StepLogIn stepLogIn = new StepLogIn();
 
         [Test, TestCaseSource(typeof(UserProviders), "PositiveTestCaseWithUsers")]
         public void PositiveLogInTest(LogInUser currenUser)
         {
-            step.OpenPage();
-            step.LogIn(currenUser.CurrentUserName, currenUser.CurrentPassword);
-            Assert.IsTrue(step.LogOutButtonIsEnabled());
+            StepOpen.OpenHomePage();
+            stepLogIn.LogInUser(currenUser.CurrentUserName, currenUser.CurrentPassword);
+            Assert.IsTrue(stepLogIn.LogOutButtonIsEnabled());
         }
 
         [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
         public void NegativeLogInTest(LogInUser currenUser)
         {
-            step.OpenPage();
-            step.LogIn(currenUser.CurrentUserName, currenUser.CurrentPassword);
-            Assert.IsTrue(step.LogInButtonIsEnabled());
+            StepOpen.OpenHomePage();
+            stepLogIn.LogInUser(currenUser.CurrentUserName, currenUser.CurrentPassword);
+            Assert.IsTrue(stepLogIn.LogInButtonIsEnabled());
         }
 
         [OneTimeTearDown]

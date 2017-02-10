@@ -44,12 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExcelBook.cs" />
-    <Compile Include="Journals\Header.cs" />
-    <Compile Include="Journals\HeaderItem.cs" />
+    <Compile Include="Journals\Menu.cs" />
     <Compile Include="Journals\Journal.cs" />
     <Compile Include="LogIn\LogInUser.cs" />
     <Compile Include="Parser\ParseCurrentSheet.cs" />
     <Compile Include="Parser\ParseExcel.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search\SimpleSearch.cs" />
     <Compile Include="Settings1.Designer.cs">
