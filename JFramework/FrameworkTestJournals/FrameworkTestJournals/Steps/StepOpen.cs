@@ -11,13 +11,13 @@ namespace FrameworkTestJournals.Steps
 
         public static void OpenPageWithJournal(string journal)
         {
-            var journalPage = new JournalPage("chrome");
+            var journalPage = new JournalPage();
             journalPage.NavigateHere(journal);
         }
 
         public static void OpenHomePage()
         {
-            var homePage = new HomePage("chrome");
+            var homePage = new HomePage();
             homePage.NavigateHere();
         }
     }

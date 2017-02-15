@@ -11,16 +11,8 @@ namespace FrameworkTestJournals
     //Main page of journals.lww.com
     class HomePage 
     {
-        public string nameBrowser;
-
         public string HomePageUrl { get { return "http://journals.lww.com/pages/default.aspx"; } }
 
-
-        public HomePage(string nameBrowser)
-        {
-            this.nameBrowser = nameBrowser;
-            WebDriver.SetDriver(nameBrowser);
-        }
 
         public void NavigateHere()
         {

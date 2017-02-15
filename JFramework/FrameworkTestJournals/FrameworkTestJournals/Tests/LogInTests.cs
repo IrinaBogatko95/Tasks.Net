@@ -8,17 +8,19 @@ using System.Threading.Tasks;
 using FrameworkTestJournals.Steps;
 using FrameworkTestJournals.DataProviders;
 using ParserExcel.LogIn;
+using FrameworkTestJournals.Tests;
 
 namespace FrameworkTestJournals
 {
     [TestFixture]
-    public class LogInTests
+    public class LogInTests : BaseTest
     {
         StepLogIn stepLogIn = new StepLogIn();
 
         [Test, TestCaseSource(typeof(UserProviders), "PositiveTestCaseWithUsers")]
         public void PositiveLogInTest(LogInUser currenUser)
         {
+            ChooseBrowser(SettingsNameBrowser.Default.CHROME);
             StepOpen.OpenHomePage();
             stepLogIn.LogInUser(currenUser.CurrentUserName, currenUser.CurrentPassword);
             Assert.IsTrue(stepLogIn.LogOutButtonIsEnabled());
@@ -27,6 +29,7 @@ namespace FrameworkTestJournals
         [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
         public void NegativeLogInTest(LogInUser currenUser)
         {
+            ChooseBrowser(SettingsNameBrowser.Default.CHROME);
             StepOpen.OpenHomePage();
             stepLogIn.LogInUser(currenUser.CurrentUserName, currenUser.CurrentPassword);
             Assert.IsTrue(stepLogIn.LogInButtonIsEnabled());

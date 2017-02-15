@@ -13,38 +13,38 @@ namespace FrameworkTestJournals.Tests
 {
     [TestFixture]
    // [Parallelizable(ParallelScope.Fixtures)]
-    class SearchTests
+    class SearchTests : BaseTest
     {
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void PositiveSearchWordTest(Journal currentJournal)
         {
+            ChooseBrowser(SettingsNameBrowser.Default.CHROME);
             StepOpen.OpenPageWithJournal(currentJournal.JournalName);
             StepSearch.SearchQuery("Journal");
 
             Assert.True(StepFind.SearchResultIsDisplayed(), $"Problem in journal {currentJournal.JournalName}");
         }
 
-        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void NegativeSearchWordTest(Journal currentJournal)
         {
-            JournalPage journalPage = new JournalPage("chrome");
-            journalPage.NavigateHere(currentJournal.JournalName);
-           // journalPage.CleanSearchBox();
-          //  journalPage.EnterSearchQuery("fjng67%&");
+            ChooseBrowser(SettingsNameBrowser.Default.CHROME);
+            StepOpen.OpenPageWithJournal(currentJournal.JournalName);
+            StepSearch.SearchQuery("fjng67%&");
 
-            Assert.True(journalPage.ErrorWindow.Enabled, $"Problem in journal {currentJournal.JournalName}");
+            Assert.True(StepFind.ErrorWindowIsEnabled(), $"Problem in journal {currentJournal.JournalName}");
         }
 
-       // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void PositiveSearchArticleTest(Journal currentJournal)
         {
-            JournalPage journalPage = new JournalPage("chrome");
-            journalPage.NavigateHere(currentJournal.JournalName);
-          //  journalPage.CleanSearchBox();
-         //   journalPage.EnterSearchQuery(journalPage.ArticleName.Text);
+            ChooseBrowser(SettingsNameBrowser.Default.CHROME);
+            StepOpen.OpenPageWithJournal(currentJournal.JournalName);
+            JournalPage journalPage = new JournalPage();
+            StepSearch.SearchQuery(journalPage.ArticleName.Text);
 
-           // Assert.True(journalPage.SearchResult.Displayed, $"Problem in journal {currentJournal.JournalName}");
+            Assert.True(StepFind.SearchResultIsDisplayed(), $"Problem in journal {currentJournal.JournalName}");
         }
 
         [OneTimeTearDown]

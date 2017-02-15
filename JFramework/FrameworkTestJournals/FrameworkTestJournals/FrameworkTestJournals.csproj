@@ -57,7 +57,8 @@
       <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ParserExcel">
+    <Reference Include="ParserExcel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\ParserExcel\ParserExcel\bin\Debug\ParserExcel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -77,9 +78,15 @@
   <ItemGroup>
     <Compile Include="DataProviders\JournalsProvider.cs" />
     <Compile Include="DataProviders\UserProviders.cs" />
+    <Compile Include="PageObject\AdvancedSearchForm.cs" />
     <Compile Include="PageObject\HomePage.cs" />
     <Compile Include="PageObject\LogInForm.cs" />
     <Compile Include="PageObject\SearchForm.cs" />
+    <Compile Include="SettingsNameBrowser.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SettingsNameBrowser.settings</DependentUpon>
+    </Compile>
     <Compile Include="SettingsPath.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -89,18 +96,23 @@
     <Compile Include="Steps\StepLogIn.cs" />
     <Compile Include="Steps\StepOpen.cs" />
     <Compile Include="Steps\StepSearch.cs" />
+    <Compile Include="Tests\AdvancedSearchTests.cs" />
     <Compile Include="Tests\LogInTests.cs" />
     <Compile Include="PageObject\JournalPage.cs" />
     <Compile Include="Tests\NavigationTestsTestMS.cs" />
     <Compile Include="Tests\NavigationTestsNUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\SearchTests.cs" />
-    <Compile Include="Tests\StepJournalPage.cs" />
+    <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="WebDriver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="SettingsNameBrowser.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SettingsNameBrowser.Designer.cs</LastGenOutput>
+    </None>
     <None Include="SettingsPath.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>SettingsPath.Designer.cs</LastGenOutput>

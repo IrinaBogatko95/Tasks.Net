@@ -14,7 +14,7 @@ namespace FrameworkTestJournals
         //[TestMethod, DataSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeadersTest(Journal currentJournal)
         {
-            JournalPage navigation = new JournalPage("chrome");
+            JournalPage navigation = new JournalPage();
             navigation.NavigateHere($"http://journals.lww.com/" + currentJournal.JournalName);
 
         }
@@ -22,7 +22,7 @@ namespace FrameworkTestJournals
         //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void FindHeaderItemsTest(Journal currentJournal)
         {
-            JournalPage navigation = new JournalPage("chrome");
+            JournalPage navigation = new JournalPage();
             navigation.NavigateHere($"http://journals.lww.com/" + currentJournal.JournalName);
 
 

@@ -21,6 +21,12 @@ namespace FrameworkTestJournals.Steps
             SearchForm searchForm = new SearchForm();
             return searchForm.SearchResult.Displayed; 
         }
-       
+
+        public static bool ErrorWindowIsEnabled()
+        {
+            SearchForm searchForm = new SearchForm();
+            return searchForm.ErrorWindow.Enabled;
+        }
+
     }
 }

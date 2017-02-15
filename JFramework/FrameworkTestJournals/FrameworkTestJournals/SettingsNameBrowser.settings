@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FrameworkTestJournals" GeneratedClassName="SettingsNameBrowser">
+  <Profiles />
+  <Settings>
+    <Setting Name="CHROME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"chrome"</Value>
+    </Setting>
+    <Setting Name="FIREFOX" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"firefox"</Value>
+    </Setting>
+    <Setting Name="IE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"IE"</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

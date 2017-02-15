@@ -7,23 +7,13 @@ using System.Threading.Tasks;
 
 namespace FrameworkTestJournals.PageObject
 {
-    class SearchForm
+    class AdvancedSearchForm
     {
         public IWebElement SearchTextBox { get { return WebDriver.Driver.FindElement(By.XPath("//*[@id=\"ctl00_SearchBox_txtKeywords\"]")); } }
         public IWebElement SearchButton { get { return WebDriver.Driver.FindElement(By.XPath(" //*[@id=\"btnGlobalSearchMagnifier\"]")); } }
         public IWebElement SearchResult { get { return WebDriver.Driver.FindElement(By.XPath($"//*[contains(@id, 'searchResultsSpan')]")); } }
 
-        public IWebElement ErrorWindow { get { return WebDriver.Driver.FindElement(By.XPath("//*[@id=\"wpSearchResults\"]/div/div[2]/span[1]/p[1]/b")); } }
+        public IWebElement ErrorWindow { get { return WebDriver.Driver.FindElement(By.XPath("//*[@id=\"searchResultsSpan\"]/div/div[2]/span[1]/p[1]")); } }
 
-        public void EnterSearchQuery(string searchQuery)
-        {
-            SearchTextBox.SendKeys(searchQuery);
-            SearchButton.Click();
-        }
-
-        public void CleanSearchBox()
-        {
-            SearchTextBox.Clear();
-        }
     }
 }

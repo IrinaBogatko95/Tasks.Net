@@ -9,13 +9,11 @@ namespace FrameworkTestJournals.Steps
 {
     class StepSearch
     {
-
         public static void SearchQuery(string query)
         {
             SearchForm searchForm = new SearchForm();
             searchForm.CleanSearchBox();
             searchForm.EnterSearchQuery(query);
         }
-
     }
 }
