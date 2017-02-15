@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Task_3_LinqToXml" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Task_3_LinqToXml\\Task_3_LinqToXml\\RD. HW - AT Lab#. 05 - Customers.xml</Value>
+    </Setting>
+    <Setting Name="PathToWrite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Collections_Comparison\\SortByCountries.txt</Value>
+    </Setting>
+    <Setting Name="Task3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Collections_Comparison\\TotalTurnoverMoreThanX.txt</Value>
+    </Setting>
+    <Setting Name="Task1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Collections_Comparison\\Task1.txt</Value>
+    </Setting>
+    <Setting Name="Task4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Collections_Comparison\\MonthAndYearFirstOrder.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
