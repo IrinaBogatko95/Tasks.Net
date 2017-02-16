@@ -17,8 +17,8 @@
     <Setting Name="MonthAndYearFirstOrder" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Task_3_LinqToXml\\results\\MonthAndYearFirstOrder.txt</Value>
     </Setting>
-    <Setting Name="GroupByMonth" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Task_3_LinqToXml\\results\\SortedByMonth.txt</Value>
+    <Setting Name="SortedMonthAndYearFirstOrder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Task_3_LinqToXml\\results\\SortedMonthAndYearFirstOrder.txt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

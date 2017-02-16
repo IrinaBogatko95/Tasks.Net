@@ -91,13 +91,13 @@ namespace Task_3_LinqToXml {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Task_3_LinqToXml\\\\results\\\\Sorte" +
-            "dByMonth.txt")]
-        public string GroupByMonth {
+            "dMonthAndYearFirstOrder.txt")]
+        public string SortedMonthAndYearFirstOrder {
             get {
-                return ((string)(this["GroupByMonth"]));
+                return ((string)(this["SortedMonthAndYearFirstOrder"]));
             }
             set {
-                this["GroupByMonth"] = value;
+                this["SortedMonthAndYearFirstOrder"] = value;
             }
         }
     }

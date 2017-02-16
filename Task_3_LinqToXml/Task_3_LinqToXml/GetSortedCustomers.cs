@@ -60,5 +60,17 @@ namespace Task_3_LinqToXml
 
             return customersSortedByMonth;
         }
+
+        public IEnumerable GetCustomersSortedByYear()
+        {
+            allCustomers = xDoc.Element("customers").Elements("customer");
+            var customersSortedByYear = from customer in allCustomers.Where(e => e.Descendants("order").Any())
+                                         let year = DateTime.Parse(customer.Descendants("orderdate").First().Value).Year
+                                         let month = DateTime.Parse(customer.Descendants("orderdate").First().Value).Month
+                                         orderby year
+                                         select $"{customer.Element("name").Value}, first order - {month} , year {year}";
+
+            return customersSortedByYear;
+        }
     }
 }

@@ -40,10 +40,10 @@ namespace Task_3_LinqToXml.Tests
         }
 
         [TestMethod()]
-        public void SortByMonthTest()
+        public void SortedMonthAndYearFirstOrderTest()
         {
             var sorterXml = new SorterXml();
-            sorterXml.SortByMonth();
+            sorterXml.SortedMonthAndYearFirstOrder();
         }
     }
 }

@@ -77,16 +77,24 @@ namespace Task_3_LinqToXml
             }
         }
 
-        public void SortByMonth()
+        public void SortedMonthAndYearFirstOrder()
         {
             getCustomers = new GetSortedCustomers();
-            var customersWithDate = getCustomers.GetCustomersSortedByMonth();
+            var customersSortedByMonth = getCustomers.GetCustomersSortedByMonth();
+            var customersSortedByYear = getCustomers.GetCustomersSortedByYear();
 
-            using (StreamWriter sw = new StreamWriter(Settings1.Default.GroupByMonth, false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter(Settings1.Default.SortedMonthAndYearFirstOrder, false, System.Text.Encoding.Default))
             {
                 sw.WriteLine("Month and year of first order of each customer, sorted by month: ");
                 sw.WriteLine("");
-                foreach (var someCustomer in customersWithDate)
+                foreach (var someCustomer in customersSortedByMonth)
+                {
+                    sw.WriteLine(someCustomer);
+                }
+                sw.WriteLine("");
+                sw.WriteLine("Month and year of first order of each customer, sorted by year: ");
+                sw.WriteLine("");
+                foreach (var someCustomer in customersSortedByYear)
                 {
                     sw.WriteLine(someCustomer);
                 }
