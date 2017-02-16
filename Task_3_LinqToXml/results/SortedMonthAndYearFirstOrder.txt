@@ -1,0 +1,367 @@
+Month and year of first order of each customer, sorted by month: 
+
+Folies gourmandes, first order - 1 , year 1997
+Franchi S.p.A., first order - 1 , year 1997
+Gourmet Lanchonetes, first order - 1 , year 1997
+La corne d'abondance, first order - 1 , year 1998
+LINO-Delicateses, first order - 1 , year 1997
+Océano Atlántico Ltda., first order - 1 , year 1997
+Ottilies Käseladen, first order - 1 , year 1997
+Consolidated Holdings, first order - 2 , year 1997
+Rancho grande, first order - 2 , year 1997
+Toms Spezialitäten, first order - 2 , year 1997
+Lazy K Kountry Store, first order - 3 , year 1997
+Blauer See Delikatessen, first order - 4 , year 1997
+Cactus Comidas para llevar, first order - 4 , year 1997
+Laughing Bacchus Wine Cellars, first order - 4 , year 1997
+North/South, first order - 4 , year 1997
+Great Lakes Food Market, first order - 5 , year 1997
+Maison Dewey, first order - 5 , year 1997
+Let's Stop N Shop, first order - 6 , year 1997
+Trail's Head Gourmet Provisioners, first order - 6 , year 1997
+Blondel père et fils, first order - 7 , year 1996
+Centro comercial Moctezuma, first order - 7 , year 1996
+Chop-suey Chinese, first order - 7 , year 1996
+Ernst Handel, first order - 7 , year 1996
+Folk och fä HB, first order - 7 , year 1996
+Frankenversand, first order - 7 , year 1996
+GROSELLA-Restaurante, first order - 7 , year 1996
+Hanari Carnes, first order - 7 , year 1996
+HILARIÓN-Abastos, first order - 7 , year 1996
+Old World Delicatessen, first order - 7 , year 1996
+Que Delícia, first order - 7 , year 1996
+Rattlesnake Canyon Grocery, first order - 7 , year 1996
+Richter Supermarkt, first order - 7 , year 1996
+Suprêmes délices, first order - 7 , year 1996
+Tradição Hipermercados, first order - 7 , year 1996
+Victuailles en stock, first order - 7 , year 1996
+Wartian Herkku, first order - 7 , year 1996
+Wellington Importadora, first order - 7 , year 1996
+White Clover Markets, first order - 7 , year 1996
+Wilman Kala, first order - 7 , year 1996
+Alfreds Futterkiste, first order - 8 , year 1997
+Berglunds snabbköp, first order - 8 , year 1996
+B's Beverages, first order - 8 , year 1996
+Comércio Mineiro, first order - 8 , year 1996
+Lehmanns Marktstand, first order - 8 , year 1996
+LILA-Supermercado, first order - 8 , year 1996
+Magazzini Alimentari Riuniti, first order - 8 , year 1996
+Morgenstern Gesundkost, first order - 8 , year 1996
+QUICK-Stop, first order - 8 , year 1996
+Reggiani Caseifici, first order - 8 , year 1996
+Ricardo Adocicados, first order - 8 , year 1996
+Romero y tomillo, first order - 8 , year 1996
+Split Rail Beer & Ale, first order - 8 , year 1996
+The Cracker Box, first order - 8 , year 1997
+Tortuga Restaurante, first order - 8 , year 1996
+Vins et alcools Chevalier, first order - 8 , year 1996
+Ana Trujillo Emparedados y helados, first order - 9 , year 1996
+Du monde entier, first order - 9 , year 1996
+France restauration, first order - 9 , year 1997
+Godos Cocina Típica, first order - 9 , year 1996
+Hungry Owl All-Night Grocers, first order - 9 , year 1996
+Island Trading, first order - 9 , year 1996
+Lonesome Pine Restaurant, first order - 9 , year 1996
+The Big Cheese, first order - 9 , year 1996
+Die Wandernde Kuh, first order - 9 , year 1996
+Bólido Comidas preparadas, first order - 10 , year 1996
+Bon app', first order - 10 , year 1996
+Furia Bacalhau e Frutos do Mar, first order - 10 , year 1996
+Königlich Essen, first order - 10 , year 1996
+Mère Paillarde, first order - 10 , year 1996
+Pericles Comidas clásicas, first order - 10 , year 1996
+Princesa Isabel Vinhos, first order - 10 , year 1996
+Save-a-lot Markets, first order - 10 , year 1996
+Simons bistro, first order - 10 , year 1996
+Antonio Moreno Taquería, first order - 11 , year 1996
+Around the Horn, first order - 11 , year 1996
+Drachenblut Delikatessen, first order - 11 , year 1996
+Eastern Connection, first order - 11 , year 1996
+Familia Arquibaldo, first order - 11 , year 1996
+Galería del gastrónomo, first order - 11 , year 1996
+La maison d'Asie, first order - 11 , year 1996
+Piccolo und mehr, first order - 11 , year 1996
+Seven Seas Imports, first order - 11 , year 1996
+Spécialités du monde, first order - 11 , year 1997
+Vaffeljernet, first order - 11 , year 1996
+Bottom-Dollar Markets, first order - 12 , year 1996
+Hungry Coyote Import Store, first order - 12 , year 1996
+Queen Cozinha, first order - 12 , year 1996
+Santé Gourmet, first order - 12 , year 1996
+Wolski  Zajazd, first order - 12 , year 1996
+
+Month and year of first order of each customer, sorted by year: 
+
+Ana Trujillo Emparedados y helados, first order - 9 , year 1996
+Antonio Moreno Taquería, first order - 11 , year 1996
+Around the Horn, first order - 11 , year 1996
+Berglunds snabbköp, first order - 8 , year 1996
+Blondel père et fils, first order - 7 , year 1996
+Bólido Comidas preparadas, first order - 10 , year 1996
+Bon app', first order - 10 , year 1996
+Bottom-Dollar Markets, first order - 12 , year 1996
+B's Beverages, first order - 8 , year 1996
+Centro comercial Moctezuma, first order - 7 , year 1996
+Chop-suey Chinese, first order - 7 , year 1996
+Comércio Mineiro, first order - 8 , year 1996
+Drachenblut Delikatessen, first order - 11 , year 1996
+Du monde entier, first order - 9 , year 1996
+Eastern Connection, first order - 11 , year 1996
+Ernst Handel, first order - 7 , year 1996
+Familia Arquibaldo, first order - 11 , year 1996
+Folk och fä HB, first order - 7 , year 1996
+Frankenversand, first order - 7 , year 1996
+Furia Bacalhau e Frutos do Mar, first order - 10 , year 1996
+Galería del gastrónomo, first order - 11 , year 1996
+Godos Cocina Típica, first order - 9 , year 1996
+GROSELLA-Restaurante, first order - 7 , year 1996
+Hanari Carnes, first order - 7 , year 1996
+HILARIÓN-Abastos, first order - 7 , year 1996
+Hungry Coyote Import Store, first order - 12 , year 1996
+Hungry Owl All-Night Grocers, first order - 9 , year 1996
+Island Trading, first order - 9 , year 1996
+Königlich Essen, first order - 10 , year 1996
+La maison d'Asie, first order - 11 , year 1996
+Lehmanns Marktstand, first order - 8 , year 1996
+LILA-Supermercado, first order - 8 , year 1996
+Lonesome Pine Restaurant, first order - 9 , year 1996
+Magazzini Alimentari Riuniti, first order - 8 , year 1996
+Mère Paillarde, first order - 10 , year 1996
+Morgenstern Gesundkost, first order - 8 , year 1996
+Old World Delicatessen, first order - 7 , year 1996
+Pericles Comidas clásicas, first order - 10 , year 1996
+Piccolo und mehr, first order - 11 , year 1996
+Princesa Isabel Vinhos, first order - 10 , year 1996
+Que Delícia, first order - 7 , year 1996
+Queen Cozinha, first order - 12 , year 1996
+QUICK-Stop, first order - 8 , year 1996
+Rattlesnake Canyon Grocery, first order - 7 , year 1996
+Reggiani Caseifici, first order - 8 , year 1996
+Ricardo Adocicados, first order - 8 , year 1996
+Richter Supermarkt, first order - 7 , year 1996
+Romero y tomillo, first order - 8 , year 1996
+Santé Gourmet, first order - 12 , year 1996
+Save-a-lot Markets, first order - 10 , year 1996
+Seven Seas Imports, first order - 11 , year 1996
+Simons bistro, first order - 10 , year 1996
+Split Rail Beer & Ale, first order - 8 , year 1996
+Suprêmes délices, first order - 7 , year 1996
+The Big Cheese, first order - 9 , year 1996
+Tortuga Restaurante, first order - 8 , year 1996
+Tradição Hipermercados, first order - 7 , year 1996
+Vaffeljernet, first order - 11 , year 1996
+Victuailles en stock, first order - 7 , year 1996
+Vins et alcools Chevalier, first order - 8 , year 1996
+Die Wandernde Kuh, first order - 9 , year 1996
+Wartian Herkku, first order - 7 , year 1996
+Wellington Importadora, first order - 7 , year 1996
+White Clover Markets, first order - 7 , year 1996
+Wilman Kala, first order - 7 , year 1996
+Wolski  Zajazd, first order - 12 , year 1996
+Alfreds Futterkiste, first order - 8 , year 1997
+Blauer See Delikatessen, first order - 4 , year 1997
+Cactus Comidas para llevar, first order - 4 , year 1997
+Consolidated Holdings, first order - 2 , year 1997
+Folies gourmandes, first order - 1 , year 1997
+France restauration, first order - 9 , year 1997
+Franchi S.p.A., first order - 1 , year 1997
+Gourmet Lanchonetes, first order - 1 , year 1997
+Great Lakes Food Market, first order - 5 , year 1997
+Laughing Bacchus Wine Cellars, first order - 4 , year 1997
+Lazy K Kountry Store, first order - 3 , year 1997
+Let's Stop N Shop, first order - 6 , year 1997
+LINO-Delicateses, first order - 1 , year 1997
+Maison Dewey, first order - 5 , year 1997
+North/South, first order - 4 , year 1997
+Océano Atlántico Ltda., first order - 1 , year 1997
+Ottilies Käseladen, first order - 1 , year 1997
+Rancho grande, first order - 2 , year 1997
+Spécialités du monde, first order - 11 , year 1997
+The Cracker Box, first order - 8 , year 1997
+Toms Spezialitäten, first order - 2 , year 1997
+Trail's Head Gourmet Provisioners, first order - 6 , year 1997
+La corne d'abondance, first order - 1 , year 1998
+
+Month and year of first order of each customer, sorted by turnover: 
+
+QUICK-Stop, turnover 110277.32, first order - 8 , year 1996
+Ernst Handel, turnover 104874.98, first order - 7 , year 1996
+Save-a-lot Markets, turnover 104361.96, first order - 10 , year 1996
+Rattlesnake Canyon Grocery, turnover 51097.8, first order - 7 , year 1996
+Hungry Owl All-Night Grocers, turnover 49979.91, first order - 9 , year 1996
+Hanari Carnes, turnover 32841.37, first order - 7 , year 1996
+Königlich Essen, turnover 30908.38, first order - 10 , year 1996
+Folk och fä HB, turnover 29567.56, first order - 7 , year 1996
+Mère Paillarde, turnover 28872.19, first order - 10 , year 1996
+White Clover Markets, turnover 27363.61, first order - 7 , year 1996
+Frankenversand, turnover 26656.56, first order - 7 , year 1996
+Queen Cozinha, turnover 25717.5, first order - 12 , year 1996
+Berglunds snabbköp, turnover 24927.57, first order - 8 , year 1996
+Suprêmes délices, turnover 24088.78, first order - 7 , year 1996
+Piccolo und mehr, turnover 23128.86, first order - 11 , year 1996
+HILARIÓN-Abastos, turnover 22768.76, first order - 7 , year 1996
+Bon app', turnover 21963.25, first order - 10 , year 1996
+Bottom-Dollar Markets, turnover 20801.59, first order - 12 , year 1996
+Richter Supermarkt, turnover 19343.78, first order - 7 , year 1996
+Lehmanns Marktstand, turnover 19261.42, first order - 8 , year 1996
+Blondel père et fils, turnover 18534.08, first order - 7 , year 1996
+Great Lakes Food Market, turnover 18507.45, first order - 5 , year 1997
+Simons bistro, turnover 16817.09, first order - 10 , year 1996
+LINO-Delicateses, turnover 16476.57, first order - 1 , year 1997
+Seven Seas Imports, turnover 16215.33, first order - 11 , year 1996
+LILA-Supermercado, turnover 16076.6, first order - 8 , year 1996
+Vaffeljernet, turnover 15843.93, first order - 11 , year 1996
+Wartian Herkku, turnover 15648.7, first order - 7 , year 1996
+Old World Delicatessen, turnover 15271.12, first order - 7 , year 1996
+Eastern Connection, turnover 14761.04, first order - 11 , year 1996
+Around the Horn, turnover 13390.65, first order - 11 , year 1996
+Ricardo Adocicados, turnover 12450.8, first order - 8 , year 1996
+Chop-suey Chinese, turnover 12348.88, first order - 7 , year 1996
+Folies gourmandes, turnover 11666.9, first order - 1 , year 1997
+Godos Cocina Típica, turnover 11446.36, first order - 9 , year 1996
+Split Rail Beer & Ale, turnover 11441.63, first order - 8 , year 1996
+Ottilies Käseladen, turnover 10991.54, first order - 1 , year 1997
+Tortuga Restaurante, turnover 10812.15, first order - 8 , year 1996
+Maison Dewey, turnover 9736.08, first order - 5 , year 1997
+Die Wandernde Kuh, turnover 9588.43, first order - 9 , year 1996
+La maison d'Asie, turnover 9328.2, first order - 11 , year 1996
+Victuailles en stock, turnover 9182.43, first order - 7 , year 1996
+Tradição Hipermercados, turnover 8714.06, first order - 7 , year 1996
+Gourmet Lanchonetes, turnover 8414.14, first order - 1 , year 1997
+Magazzini Alimentari Riuniti, turnover 7176.21, first order - 8 , year 1996
+Reggiani Caseifici, turnover 7048.24, first order - 8 , year 1996
+Antonio Moreno Taquería, turnover 7023.97, first order - 11 , year 1996
+Que Delícia, turnover 6664.81, first order - 7 , year 1996
+Princesa Isabel Vinhos, turnover 6455.94, first order - 10 , year 1996
+Furia Bacalhau e Frutos do Mar, turnover 6427.42, first order - 10 , year 1996
+Island Trading, turnover 6146.3, first order - 9 , year 1996
+B's Beverages, turnover 6089.9, first order - 8 , year 1996
+Wellington Importadora, turnover 6068.2, first order - 7 , year 1996
+Santé Gourmet, turnover 5735.15, first order - 12 , year 1996
+Morgenstern Gesundkost, turnover 5042.2, first order - 8 , year 1996
+Alfreds Futterkiste, turnover 4273, first order - 8 , year 1997
+Lonesome Pine Restaurant, turnover 4258.6, first order - 9 , year 1996
+Pericles Comidas clásicas, turnover 4242.2, first order - 10 , year 1996
+Bólido Comidas preparadas, turnover 4232.85, first order - 10 , year 1996
+Familia Arquibaldo, turnover 4107.55, first order - 11 , year 1996
+Comércio Mineiro, turnover 3810.75, first order - 8 , year 1996
+Drachenblut Delikatessen, turnover 3763.21, first order - 11 , year 1996
+Wilman Kala, turnover 3601.35, first order - 7 , year 1996
+Wolski  Zajazd, turnover 3531.95, first order - 12 , year 1996
+Océano Atlántico Ltda., turnover 3460.2, first order - 1 , year 1997
+The Big Cheese, turnover 3361, first order - 9 , year 1996
+Blauer See Delikatessen, turnover 3239.8, first order - 4 , year 1997
+France restauration, turnover 3172.16, first order - 9 , year 1997
+Let's Stop N Shop, turnover 3076.47, first order - 6 , year 1997
+Hungry Coyote Import Store, turnover 3063.2, first order - 12 , year 1996
+Toms Spezialitäten, turnover 2914.74, first order - 2 , year 1997
+Rancho grande, turnover 2844.1, first order - 2 , year 1997
+Spécialités du monde, turnover 2423.35, first order - 11 , year 1997
+La corne d'abondance, turnover 1992.05, first order - 1 , year 1998
+The Cracker Box, turnover 1947.24, first order - 8 , year 1997
+Cactus Comidas para llevar, turnover 1814.8, first order - 4 , year 1997
+Consolidated Holdings, turnover 1719.1, first order - 2 , year 1997
+Du monde entier, turnover 1615.9, first order - 9 , year 1996
+Trail's Head Gourmet Provisioners, turnover 1571.2, first order - 6 , year 1997
+Franchi S.p.A., turnover 1545.7, first order - 1 , year 1997
+GROSELLA-Restaurante, turnover 1488.7, first order - 7 , year 1996
+Romero y tomillo, turnover 1467.29, first order - 8 , year 1996
+Ana Trujillo Emparedados y helados, turnover 1402.95, first order - 9 , year 1996
+Vins et alcools Chevalier, turnover 1040, first order - 8 , year 1996
+Galería del gastrónomo, turnover 836.7, first order - 11 , year 1996
+North/South, turnover 649, first order - 4 , year 1997
+Laughing Bacchus Wine Cellars, turnover 522.5, first order - 4 , year 1997
+Lazy K Kountry Store, turnover 357, first order - 3 , year 1997
+Centro comercial Moctezuma, turnover 100.8, first order - 7 , year 1996
+
+Month and year of first order of each customer, sorted by name: 
+
+Alfreds Futterkiste, first order - 8 , year 1997
+Ana Trujillo Emparedados y helados, first order - 9 , year 1996
+Antonio Moreno Taquería, first order - 11 , year 1996
+Around the Horn, first order - 11 , year 1996
+Berglunds snabbköp, first order - 8 , year 1996
+Blauer See Delikatessen, first order - 4 , year 1997
+Blondel père et fils, first order - 7 , year 1996
+Bólido Comidas preparadas, first order - 10 , year 1996
+Bon app', first order - 10 , year 1996
+Bottom-Dollar Markets, first order - 12 , year 1996
+B's Beverages, first order - 8 , year 1996
+Cactus Comidas para llevar, first order - 4 , year 1997
+Centro comercial Moctezuma, first order - 7 , year 1996
+Chop-suey Chinese, first order - 7 , year 1996
+Comércio Mineiro, first order - 8 , year 1996
+Consolidated Holdings, first order - 2 , year 1997
+Die Wandernde Kuh, first order - 9 , year 1996
+Drachenblut Delikatessen, first order - 11 , year 1996
+Du monde entier, first order - 9 , year 1996
+Eastern Connection, first order - 11 , year 1996
+Ernst Handel, first order - 7 , year 1996
+Familia Arquibaldo, first order - 11 , year 1996
+Folies gourmandes, first order - 1 , year 1997
+Folk och fä HB, first order - 7 , year 1996
+France restauration, first order - 9 , year 1997
+Franchi S.p.A., first order - 1 , year 1997
+Frankenversand, first order - 7 , year 1996
+Furia Bacalhau e Frutos do Mar, first order - 10 , year 1996
+Galería del gastrónomo, first order - 11 , year 1996
+Godos Cocina Típica, first order - 9 , year 1996
+Gourmet Lanchonetes, first order - 1 , year 1997
+Great Lakes Food Market, first order - 5 , year 1997
+GROSELLA-Restaurante, first order - 7 , year 1996
+Hanari Carnes, first order - 7 , year 1996
+HILARIÓN-Abastos, first order - 7 , year 1996
+Hungry Coyote Import Store, first order - 12 , year 1996
+Hungry Owl All-Night Grocers, first order - 9 , year 1996
+Island Trading, first order - 9 , year 1996
+Königlich Essen, first order - 10 , year 1996
+La corne d'abondance, first order - 1 , year 1998
+La maison d'Asie, first order - 11 , year 1996
+Laughing Bacchus Wine Cellars, first order - 4 , year 1997
+Lazy K Kountry Store, first order - 3 , year 1997
+Lehmanns Marktstand, first order - 8 , year 1996
+Let's Stop N Shop, first order - 6 , year 1997
+LILA-Supermercado, first order - 8 , year 1996
+LINO-Delicateses, first order - 1 , year 1997
+Lonesome Pine Restaurant, first order - 9 , year 1996
+Magazzini Alimentari Riuniti, first order - 8 , year 1996
+Maison Dewey, first order - 5 , year 1997
+Mère Paillarde, first order - 10 , year 1996
+Morgenstern Gesundkost, first order - 8 , year 1996
+North/South, first order - 4 , year 1997
+Océano Atlántico Ltda., first order - 1 , year 1997
+Old World Delicatessen, first order - 7 , year 1996
+Ottilies Käseladen, first order - 1 , year 1997
+Pericles Comidas clásicas, first order - 10 , year 1996
+Piccolo und mehr, first order - 11 , year 1996
+Princesa Isabel Vinhos, first order - 10 , year 1996
+Que Delícia, first order - 7 , year 1996
+Queen Cozinha, first order - 12 , year 1996
+QUICK-Stop, first order - 8 , year 1996
+Rancho grande, first order - 2 , year 1997
+Rattlesnake Canyon Grocery, first order - 7 , year 1996
+Reggiani Caseifici, first order - 8 , year 1996
+Ricardo Adocicados, first order - 8 , year 1996
+Richter Supermarkt, first order - 7 , year 1996
+Romero y tomillo, first order - 8 , year 1996
+Santé Gourmet, first order - 12 , year 1996
+Save-a-lot Markets, first order - 10 , year 1996
+Seven Seas Imports, first order - 11 , year 1996
+Simons bistro, first order - 10 , year 1996
+Spécialités du monde, first order - 11 , year 1997
+Split Rail Beer & Ale, first order - 8 , year 1996
+Suprêmes délices, first order - 7 , year 1996
+The Big Cheese, first order - 9 , year 1996
+The Cracker Box, first order - 8 , year 1997
+Toms Spezialitäten, first order - 2 , year 1997
+Tortuga Restaurante, first order - 8 , year 1996
+Tradição Hipermercados, first order - 7 , year 1996
+Trail's Head Gourmet Provisioners, first order - 6 , year 1997
+Vaffeljernet, first order - 11 , year 1996
+Victuailles en stock, first order - 7 , year 1996
+Vins et alcools Chevalier, first order - 8 , year 1996
+Wartian Herkku, first order - 7 , year 1996
+Wellington Importadora, first order - 7 , year 1996
+White Clover Markets, first order - 7 , year 1996
+Wilman Kala, first order - 7 , year 1996
+Wolski  Zajazd, first order - 12 , year 1996

@@ -82,6 +82,8 @@ namespace Task_3_LinqToXml
             getCustomers = new GetSortedCustomers();
             var customersSortedByMonth = getCustomers.GetCustomersSortedByMonth();
             var customersSortedByYear = getCustomers.GetCustomersSortedByYear();
+            var customersSortedByTurnover = getCustomers.GetCustomersSortedByTurnover();
+            var customersSortedByName = getCustomers.GetCustomersSortedByName();
 
             using (StreamWriter sw = new StreamWriter(Settings1.Default.SortedMonthAndYearFirstOrder, false, System.Text.Encoding.Default))
             {
@@ -95,6 +97,20 @@ namespace Task_3_LinqToXml
                 sw.WriteLine("Month and year of first order of each customer, sorted by year: ");
                 sw.WriteLine("");
                 foreach (var someCustomer in customersSortedByYear)
+                {
+                    sw.WriteLine(someCustomer);
+                }
+                sw.WriteLine("");
+                sw.WriteLine("Month and year of first order of each customer, sorted by turnover: ");
+                sw.WriteLine("");
+                foreach (var someCustomer in customersSortedByTurnover)
+                {
+                    sw.WriteLine(someCustomer);
+                }
+                sw.WriteLine("");
+                sw.WriteLine("Month and year of first order of each customer, sorted by name: ");
+                sw.WriteLine("");
+                foreach (var someCustomer in customersSortedByName)
                 {
                     sw.WriteLine(someCustomer);
                 }
