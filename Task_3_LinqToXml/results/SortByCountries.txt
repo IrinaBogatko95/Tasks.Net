@@ -1,154 +1,92 @@
-Country: Germany
-Customers: 
-Alfreds Futterkiste
-Blauer See Delikatessen
-Drachenblut Delikatessen
-Frankenversand
-Königlich Essen
-Lehmanns Marktstand
-Morgenstern Gesundkost
-Ottilies Käseladen
-QUICK-Stop
-Toms Spezialitäten
-Die Wandernde Kuh
-
-Country: Mexico
-Customers: 
-Ana Trujillo Emparedados y helados
-Antonio Moreno Taquería
-Centro comercial Moctezuma
-Pericles Comidas clásicas
-Tortuga Restaurante
-
-Country: UK
-Customers: 
-Around the Horn
-B's Beverages
-Consolidated Holdings
-Eastern Connection
-Island Trading
-North/South
-Seven Seas Imports
-
-Country: Sweden
-Customers: 
-Berglunds snabbköp
-Folk och fä HB
-
-Country: France
-Customers: 
-Blondel père et fils
-Bon app'
-Du monde entier
-Folies gourmandes
-France restauration
-La corne d'abondance
-La maison d'Asie
-Paris spécialités
-Spécialités du monde
-Victuailles en stock
-Vins et alcools Chevalier
-
-Country: Spain
-Customers: 
-Bólido Comidas preparadas
-FISSA Fabrica Inter. Salchichas S.A.
-Galería del gastrónomo
-Godos Cocina Típica
-Romero y tomillo
-
-Country: Canada
-Customers: 
-Bottom-Dollar Markets
-Laughing Bacchus Wine Cellars
-Mère Paillarde
-
-Country: Argentina
-Customers: 
-Cactus Comidas para llevar
-Océano Atlántico Ltda.
-Rancho grande
-
-Country: Switzerland
-Customers: 
-Chop-suey Chinese
-Richter Supermarkt
-
-Country: Brazil
-Customers: 
-Comércio Mineiro
-Familia Arquibaldo
-Gourmet Lanchonetes
-Hanari Carnes
-Que Delícia
-Queen Cozinha
-Ricardo Adocicados
-Tradição Hipermercados
-Wellington Importadora
-
-Country: Austria
-Customers: 
-Ernst Handel
-Piccolo und mehr
-
-Country: Italy
-Customers: 
-Franchi S.p.A.
-Magazzini Alimentari Riuniti
-Reggiani Caseifici
-
-Country: Portugal
-Customers: 
-Furia Bacalhau e Frutos do Mar
-Princesa Isabel Vinhos
-
-Country: USA
-Customers: 
-Great Lakes Food Market
-Hungry Coyote Import Store
-Lazy K Kountry Store
-Let's Stop N Shop
-Lonesome Pine Restaurant
-Old World Delicatessen
-Rattlesnake Canyon Grocery
-Save-a-lot Markets
-Split Rail Beer & Ale
-The Big Cheese
-The Cracker Box
-Trail's Head Gourmet Provisioners
-White Clover Markets
-
-Country: Venezuela
-Customers: 
-GROSELLA-Restaurante
-HILARIÓN-Abastos
-LILA-Supermercado
-LINO-Delicateses
-
-Country: Ireland
-Customers: 
-Hungry Owl All-Night Grocers
-
-Country: Belgium
-Customers: 
-Maison Dewey
-Suprêmes délices
-
-Country: Norway
-Customers: 
-Santé Gourmet
-
-Country: Denmark
-Customers: 
-Simons bistro
-Vaffeljernet
-
-Country: Finland
-Customers: 
-Wartian Herkku
-Wilman Kala
-
-Country: Poland
-Customers: 
-Wolski  Zajazd
-
+Customers, sorted by country: 
+Argentina - Cactus Comidas para llevar
+Argentina - Océano Atlántico Ltda.
+Argentina - Rancho grande
+Austria - Ernst Handel
+Austria - Piccolo und mehr
+Belgium - Maison Dewey
+Belgium - Suprêmes délices
+Brazil - Comércio Mineiro
+Brazil - Familia Arquibaldo
+Brazil - Gourmet Lanchonetes
+Brazil - Hanari Carnes
+Brazil - Que Delícia
+Brazil - Queen Cozinha
+Brazil - Ricardo Adocicados
+Brazil - Tradição Hipermercados
+Brazil - Wellington Importadora
+Canada - Bottom-Dollar Markets
+Canada - Laughing Bacchus Wine Cellars
+Canada - Mère Paillarde
+Denmark - Simons bistro
+Denmark - Vaffeljernet
+Finland - Wartian Herkku
+Finland - Wilman Kala
+France - Blondel père et fils
+France - Bon app'
+France - Du monde entier
+France - Folies gourmandes
+France - France restauration
+France - La corne d'abondance
+France - La maison d'Asie
+France - Paris spécialités
+France - Spécialités du monde
+France - Victuailles en stock
+France - Vins et alcools Chevalier
+Germany - Alfreds Futterkiste
+Germany - Blauer See Delikatessen
+Germany - Drachenblut Delikatessen
+Germany - Frankenversand
+Germany - Königlich Essen
+Germany - Lehmanns Marktstand
+Germany - Morgenstern Gesundkost
+Germany - Ottilies Käseladen
+Germany - QUICK-Stop
+Germany - Toms Spezialitäten
+Germany - Die Wandernde Kuh
+Ireland - Hungry Owl All-Night Grocers
+Italy - Franchi S.p.A.
+Italy - Magazzini Alimentari Riuniti
+Italy - Reggiani Caseifici
+Mexico - Ana Trujillo Emparedados y helados
+Mexico - Antonio Moreno Taquería
+Mexico - Centro comercial Moctezuma
+Mexico - Pericles Comidas clásicas
+Mexico - Tortuga Restaurante
+Norway - Santé Gourmet
+Poland - Wolski  Zajazd
+Portugal - Furia Bacalhau e Frutos do Mar
+Portugal - Princesa Isabel Vinhos
+Spain - Bólido Comidas preparadas
+Spain - FISSA Fabrica Inter. Salchichas S.A.
+Spain - Galería del gastrónomo
+Spain - Godos Cocina Típica
+Spain - Romero y tomillo
+Sweden - Berglunds snabbköp
+Sweden - Folk och fä HB
+Switzerland - Chop-suey Chinese
+Switzerland - Richter Supermarkt
+UK - Around the Horn
+UK - B's Beverages
+UK - Consolidated Holdings
+UK - Eastern Connection
+UK - Island Trading
+UK - North/South
+UK - Seven Seas Imports
+USA - Great Lakes Food Market
+USA - Hungry Coyote Import Store
+USA - Lazy K Kountry Store
+USA - Let's Stop N Shop
+USA - Lonesome Pine Restaurant
+USA - Old World Delicatessen
+USA - Rattlesnake Canyon Grocery
+USA - Save-a-lot Markets
+USA - Split Rail Beer & Ale
+USA - The Big Cheese
+USA - The Cracker Box
+USA - Trail's Head Gourmet Provisioners
+USA - White Clover Markets
+Venezuela - GROSELLA-Restaurante
+Venezuela - HILARIÓN-Abastos
+Venezuela - LILA-Supermercado
+Venezuela - LINO-Delicateses

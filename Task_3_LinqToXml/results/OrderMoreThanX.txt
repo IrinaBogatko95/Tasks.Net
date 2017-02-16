@@ -1,4 +1,5 @@
 Customers, which have orders with sum more than 10000: 
+
 Hanari Carnes
 Hungry Owl All-Night Grocers
 Königlich Essen

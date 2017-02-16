@@ -1,4 +1,5 @@
 Customers, whose total turnover (sum of all orders) exceeds the value of 20000: 
+
 Berglunds snabbköp
 Bon app'
 Bottom-Dollar Markets

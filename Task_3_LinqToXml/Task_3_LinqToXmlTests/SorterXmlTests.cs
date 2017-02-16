@@ -38,5 +38,12 @@ namespace Task_3_LinqToXml.Tests
             var sorterXml = new SorterXml();
             sorterXml.TotalTurnoverMoreThanX(20000);
         }
+
+        [TestMethod()]
+        public void SortByMonthTest()
+        {
+            var sorterXml = new SorterXml();
+            sorterXml.SortByMonth();
+        }
     }
 }

@@ -87,5 +87,18 @@ namespace Task_3_LinqToXml {
                 this["MonthAndYearFirstOrder"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Task_3_LinqToXml\\\\results\\\\Sorte" +
+            "dByMonth.txt")]
+        public string GroupByMonth {
+            get {
+                return ((string)(this["GroupByMonth"]));
+            }
+            set {
+                this["GroupByMonth"] = value;
+            }
+        }
     }
 }

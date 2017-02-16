@@ -54,7 +54,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings1.settings</DependentUpon>
     </Compile>
-    <Compile Include="WriteResultsToFile.cs" />
+    <Compile Include="GetSortedCustomers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
