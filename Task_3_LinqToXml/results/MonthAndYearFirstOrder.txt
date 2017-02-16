@@ -1,0 +1,178 @@
+Customer: Alfreds Futterkiste  first order - month 8, year 1997 
+
+Customer: Ana Trujillo Emparedados y helados  first order - month 9, year 1996 
+
+Customer: Antonio Moreno Taquería  first order - month 11, year 1996 
+
+Customer: Around the Horn  first order - month 11, year 1996 
+
+Customer: Berglunds snabbköp  first order - month 8, year 1996 
+
+Customer: Blauer See Delikatessen  first order - month 4, year 1997 
+
+Customer: Blondel père et fils  first order - month 7, year 1996 
+
+Customer: Bólido Comidas preparadas  first order - month 10, year 1996 
+
+Customer: Bon app'  first order - month 10, year 1996 
+
+Customer: Bottom-Dollar Markets  first order - month 12, year 1996 
+
+Customer: B's Beverages  first order - month 8, year 1996 
+
+Customer: Cactus Comidas para llevar  first order - month 4, year 1997 
+
+Customer: Centro comercial Moctezuma  first order - month 7, year 1996 
+
+Customer: Chop-suey Chinese  first order - month 7, year 1996 
+
+Customer: Comércio Mineiro  first order - month 8, year 1996 
+
+Customer: Consolidated Holdings  first order - month 2, year 1997 
+
+Customer: Drachenblut Delikatessen  first order - month 11, year 1996 
+
+Customer: Du monde entier  first order - month 9, year 1996 
+
+Customer: Eastern Connection  first order - month 11, year 1996 
+
+Customer: Ernst Handel  first order - month 7, year 1996 
+
+Customer: Familia Arquibaldo  first order - month 11, year 1996 
+
+Customer: Folies gourmandes  first order - month 1, year 1997 
+
+Customer: Folk och fä HB  first order - month 7, year 1996 
+
+Customer: Frankenversand  first order - month 7, year 1996 
+
+Customer: France restauration  first order - month 9, year 1997 
+
+Customer: Franchi S.p.A.  first order - month 1, year 1997 
+
+Customer: Furia Bacalhau e Frutos do Mar  first order - month 10, year 1996 
+
+Customer: Galería del gastrónomo  first order - month 11, year 1996 
+
+Customer: Godos Cocina Típica  first order - month 9, year 1996 
+
+Customer: Gourmet Lanchonetes  first order - month 1, year 1997 
+
+Customer: Great Lakes Food Market  first order - month 5, year 1997 
+
+Customer: GROSELLA-Restaurante  first order - month 7, year 1996 
+
+Customer: Hanari Carnes  first order - month 7, year 1996 
+
+Customer: HILARIÓN-Abastos  first order - month 7, year 1996 
+
+Customer: Hungry Coyote Import Store  first order - month 12, year 1996 
+
+Customer: Hungry Owl All-Night Grocers  first order - month 9, year 1996 
+
+Customer: Island Trading  first order - month 9, year 1996 
+
+Customer: Königlich Essen  first order - month 10, year 1996 
+
+Customer: La corne d'abondance  first order - month 1, year 1998 
+
+Customer: La maison d'Asie  first order - month 11, year 1996 
+
+Customer: Laughing Bacchus Wine Cellars  first order - month 4, year 1997 
+
+Customer: Lazy K Kountry Store  first order - month 3, year 1997 
+
+Customer: Lehmanns Marktstand  first order - month 8, year 1996 
+
+Customer: Let's Stop N Shop  first order - month 6, year 1997 
+
+Customer: LILA-Supermercado  first order - month 8, year 1996 
+
+Customer: LINO-Delicateses  first order - month 1, year 1997 
+
+Customer: Lonesome Pine Restaurant  first order - month 9, year 1996 
+
+Customer: Magazzini Alimentari Riuniti  first order - month 8, year 1996 
+
+Customer: Maison Dewey  first order - month 5, year 1997 
+
+Customer: Mère Paillarde  first order - month 10, year 1996 
+
+Customer: Morgenstern Gesundkost  first order - month 8, year 1996 
+
+Customer: North/South  first order - month 4, year 1997 
+
+Customer: Océano Atlántico Ltda.  first order - month 1, year 1997 
+
+Customer: Old World Delicatessen  first order - month 7, year 1996 
+
+Customer: Ottilies Käseladen  first order - month 1, year 1997 
+
+Customer: Pericles Comidas clásicas  first order - month 10, year 1996 
+
+Customer: Piccolo und mehr  first order - month 11, year 1996 
+
+Customer: Princesa Isabel Vinhos  first order - month 10, year 1996 
+
+Customer: Que Delícia  first order - month 7, year 1996 
+
+Customer: Queen Cozinha  first order - month 12, year 1996 
+
+Customer: QUICK-Stop  first order - month 8, year 1996 
+
+Customer: Rancho grande  first order - month 2, year 1997 
+
+Customer: Rattlesnake Canyon Grocery  first order - month 7, year 1996 
+
+Customer: Reggiani Caseifici  first order - month 8, year 1996 
+
+Customer: Ricardo Adocicados  first order - month 8, year 1996 
+
+Customer: Richter Supermarkt  first order - month 7, year 1996 
+
+Customer: Romero y tomillo  first order - month 8, year 1996 
+
+Customer: Santé Gourmet  first order - month 12, year 1996 
+
+Customer: Save-a-lot Markets  first order - month 10, year 1996 
+
+Customer: Seven Seas Imports  first order - month 11, year 1996 
+
+Customer: Simons bistro  first order - month 10, year 1996 
+
+Customer: Spécialités du monde  first order - month 11, year 1997 
+
+Customer: Split Rail Beer & Ale  first order - month 8, year 1996 
+
+Customer: Suprêmes délices  first order - month 7, year 1996 
+
+Customer: The Big Cheese  first order - month 9, year 1996 
+
+Customer: The Cracker Box  first order - month 8, year 1997 
+
+Customer: Toms Spezialitäten  first order - month 2, year 1997 
+
+Customer: Tortuga Restaurante  first order - month 8, year 1996 
+
+Customer: Tradição Hipermercados  first order - month 7, year 1996 
+
+Customer: Trail's Head Gourmet Provisioners  first order - month 6, year 1997 
+
+Customer: Vaffeljernet  first order - month 11, year 1996 
+
+Customer: Victuailles en stock  first order - month 7, year 1996 
+
+Customer: Vins et alcools Chevalier  first order - month 8, year 1996 
+
+Customer: Die Wandernde Kuh  first order - month 9, year 1996 
+
+Customer: Wartian Herkku  first order - month 7, year 1996 
+
+Customer: Wellington Importadora  first order - month 7, year 1996 
+
+Customer: White Clover Markets  first order - month 7, year 1996 
+
+Customer: Wilman Kala  first order - month 7, year 1996 
+
+Customer: Wolski  Zajazd  first order - month 12, year 1996 
+

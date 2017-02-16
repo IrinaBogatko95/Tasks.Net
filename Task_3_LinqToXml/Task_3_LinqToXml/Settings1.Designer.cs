@@ -38,53 +38,53 @@ namespace Task_3_LinqToXml {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Collections_Comparison\\\\SortByCo" +
-            "untries.txt")]
-        public string PathToWrite {
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Task_3_LinqToXml\\\\results\\\\SortB" +
+            "yCountries.txt")]
+        public string SortByCountries {
             get {
-                return ((string)(this["PathToWrite"]));
+                return ((string)(this["SortByCountries"]));
             }
             set {
-                this["PathToWrite"] = value;
+                this["SortByCountries"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Collections_Comparison\\\\TotalTur" +
-            "noverMoreThanX.txt")]
-        public string Task3 {
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Task_3_LinqToXml\\\\results\\\\Total" +
+            "TurnoverMoreThanX.txt")]
+        public string TotalTurnoverMoreThanX {
             get {
-                return ((string)(this["Task3"]));
+                return ((string)(this["TotalTurnoverMoreThanX"]));
             }
             set {
-                this["Task3"] = value;
+                this["TotalTurnoverMoreThanX"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Collections_Comparison\\\\Task1.tx" +
-            "t")]
-        public string Task1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Task_3_LinqToXml\\\\results\\\\Order" +
+            "MoreThanX.txt")]
+        public string OrderMoreThanX {
             get {
-                return ((string)(this["Task1"]));
+                return ((string)(this["OrderMoreThanX"]));
             }
             set {
-                this["Task1"] = value;
+                this["OrderMoreThanX"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Collections_Comparison\\\\MonthAnd" +
-            "YearFirstOrder.txt")]
-        public string Task4 {
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Task_3_LinqToXml\\\\results\\\\Month" +
+            "AndYearFirstOrder.txt")]
+        public string MonthAndYearFirstOrder {
             get {
-                return ((string)(this["Task4"]));
+                return ((string)(this["MonthAndYearFirstOrder"]));
             }
             set {
-                this["Task4"] = value;
+                this["MonthAndYearFirstOrder"] = value;
             }
         }
     }
