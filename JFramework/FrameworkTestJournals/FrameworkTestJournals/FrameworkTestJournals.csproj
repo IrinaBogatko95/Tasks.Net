@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="browserConfiguration.config" />
     <None Include="packages.config" />
     <None Include="SettingsNameBrowser.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -12,12 +12,12 @@ using FrameworkTestJournals.Tests;
 
 namespace FrameworkTestJournals
 {
-    [TestFixture]
+   // [TestFixture]
     public class LogInTests : BaseTest
     {
         StepLogIn stepLogIn = new StepLogIn();
 
-        [Test, TestCaseSource(typeof(UserProviders), "PositiveTestCaseWithUsers")]
+       // [Test, TestCaseSource(typeof(UserProviders), "PositiveTestCaseWithUsers")]
         public void PositiveLogInTest(LogInUser currenUser)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
@@ -26,7 +26,7 @@ namespace FrameworkTestJournals
             Assert.IsTrue(stepLogIn.LogOutButtonIsEnabled());
         }
 
-        [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
+       // [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
         public void NegativeLogInTest(LogInUser currenUser)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);

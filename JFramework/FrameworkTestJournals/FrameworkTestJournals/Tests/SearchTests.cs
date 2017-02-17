@@ -11,12 +11,12 @@ using FrameworkTestJournals.Steps;
 
 namespace FrameworkTestJournals.Tests
 {
-    [TestFixture]
+   // [TestFixture]
    // [Parallelizable(ParallelScope.Fixtures)]
     class SearchTests : BaseTest
     {
 
-        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void PositiveSearchWordTest(Journal currentJournal)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
@@ -26,7 +26,7 @@ namespace FrameworkTestJournals.Tests
             Assert.True(StepFind.SearchResultIsDisplayed(), $"Problem in journal {currentJournal.JournalName}");
         }
 
-        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+       // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void NegativeSearchWordTest(Journal currentJournal)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
@@ -36,7 +36,7 @@ namespace FrameworkTestJournals.Tests
             Assert.True(StepFind.ErrorWindowIsEnabled(), $"Problem in journal {currentJournal.JournalName}");
         }
 
-        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void PositiveSearchArticleTest(Journal currentJournal)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);

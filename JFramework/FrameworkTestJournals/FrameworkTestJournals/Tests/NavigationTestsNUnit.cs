@@ -11,6 +11,7 @@ using FrameworkTestJournals.Tests;
 namespace FrameworkTestJournals
 {
     [TestFixture]
+   // [Parallelizable(ParallelScope.Fixtures)]
     class NavigationTestsNUnit : BaseTest
     {
        public StepFind stepFind = new StepFind();
