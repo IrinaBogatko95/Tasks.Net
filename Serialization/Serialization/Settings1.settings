@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Serialization" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="SerializationPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Serialization\\Serialization\\results\\AfterDeserialisation.xml</Value>
+    </Setting>
+    <Setting Name="PathToDeserialize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\RD. HW - AT Lab#. 08 - Books.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

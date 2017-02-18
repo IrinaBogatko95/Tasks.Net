@@ -1,4 +1,5 @@
 ﻿using FrameworkTestJournals.PageObject;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,15 @@ namespace FrameworkTestJournals.Steps
             SearchForm searchForm = new SearchForm();
             searchForm.CleanSearchBox();
             searchForm.EnterSearchQuery(query);
+        }
+
+        public static void AdvansedSearchQuery(string query, int numberTextBox)
+        {
+            SearchForm searchForm = new SearchForm();
+            JournalPage journalPage = new JournalPage();
+            journalPage.ClickAdvansedSearchButton();
+            IWebElement textBox =  searchForm.GetAdvansedSearchTextbox(numberTextBox);
+            searchForm.EnterAdvansedSearchQuery(query, textBox);
         }
     }
 }

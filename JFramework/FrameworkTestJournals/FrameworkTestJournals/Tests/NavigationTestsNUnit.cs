@@ -16,7 +16,7 @@ namespace FrameworkTestJournals
     {
        public StepFind stepFind = new StepFind();
 
-        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public void FindMenuTest(Journal currentJournal)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
