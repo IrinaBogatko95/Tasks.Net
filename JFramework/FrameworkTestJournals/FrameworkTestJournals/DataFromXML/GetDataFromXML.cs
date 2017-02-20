@@ -9,7 +9,7 @@ namespace FrameworkTestJournals.DataFromXML
 {
     class GetDataFromXML
     {
-        public static XDocument xDoc = XDocument.Load("C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\JFramework\\FrameworkTestJournals\\FrameworkTestJournals\\DataAdvansedSearch.xml");
+        public static XDocument xDoc = XDocument.Load("C:\\Users\\irina\\Documents\\Tasks.Net\\JFramework\\FrameworkTestJournals\\FrameworkTestJournals\\DataAdvansedSearch.xml");
 
         public static string getTitle()
         {
