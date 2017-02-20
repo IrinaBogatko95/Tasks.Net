@@ -1,12 +1,11 @@
-﻿using NUnit.Framework;
+﻿using FrameworkTestJournals.DataFromXML;
+using FrameworkTestJournals.Settings;
+using FrameworkTestJournals.Steps;
+using NUnit.Framework;
 using ParserExcel;
 using ParserExcel.LogIn;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FrameworkTestJournals.DataProviders
 {
@@ -15,19 +14,19 @@ namespace FrameworkTestJournals.DataProviders
     {
         public static IEnumerable PositiveTestCaseWithUsers()
         {
-            List<LogInUser> allUsers = ParseExcel.ParserForLogIn(SettingsPath.Default.UsersPositive);
-            foreach (LogInUser currentUser in allUsers)
+            var data = StepSerialization.GetLogInData(SettingsPath.Default.PositiveDataLogIn);
+            foreach (User currentUser in data.Users)
             {
-                yield return new TestCaseData(currentUser);
+                yield return new TestCaseData(currentUser.Username, currentUser.Password);
             }
         }
 
         public static IEnumerable NegativeTestCaseWithUsers()
         {
-            List<LogInUser> allUsers = ParseExcel.ParserForLogIn(SettingsPath.Default.UsersNegative);
-            foreach (LogInUser currentUser in allUsers)
+            var data = StepSerialization.GetLogInData(SettingsPath.Default.NegativeDataLogIn);
+            foreach (User currentUser in data.Users)
             {
-                yield return new TestCaseData(currentUser);
+                yield return new TestCaseData(currentUser.Username, currentUser.Password);
             }
         }
     }

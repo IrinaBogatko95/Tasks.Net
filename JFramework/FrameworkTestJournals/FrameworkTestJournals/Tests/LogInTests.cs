@@ -1,37 +1,35 @@
-﻿using System.IO;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
 using FrameworkTestJournals.Steps;
-using FrameworkTestJournals.DataProviders;
 using ParserExcel.LogIn;
 using FrameworkTestJournals.Tests;
+using FrameworkTestJournals.Settings;
+using FrameworkTestJournals.DataProviders;
+using FrameworkTestJournals.DataFromXML;
 
 namespace FrameworkTestJournals
 {
-   // [TestFixture]
+    [TestFixture]
     public class LogInTests : BaseTest
     {
         StepLogIn stepLogIn = new StepLogIn();
 
-       // [Test, TestCaseSource(typeof(UserProviders), "PositiveTestCaseWithUsers")]
-        public void PositiveLogInTest(LogInUser currenUser)
+        [Test, TestCaseSource(typeof(UserProviders), "PositiveTestCaseWithUsers")]
+        public void PositiveLogInTest(string username, string password)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
             StepOpen.OpenHomePage();
-            stepLogIn.LogInUser(currenUser.CurrentUserName, currenUser.CurrentPassword);
+            stepLogIn.LogInUser(username, password);
+
             Assert.IsTrue(stepLogIn.LogOutButtonIsEnabled());
         }
 
-       // [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
-        public void NegativeLogInTest(LogInUser currenUser)
+        [Test, TestCaseSource(typeof(UserProviders), "NegativeTestCaseWithUsers")]
+        public void NegativeLogInTest(string username, string password)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
             StepOpen.OpenHomePage();
-            stepLogIn.LogInUser(currenUser.CurrentUserName, currenUser.CurrentPassword);
+            stepLogIn.LogInUser(username, password);
+
             Assert.IsTrue(stepLogIn.LogInButtonIsEnabled());
         }
 

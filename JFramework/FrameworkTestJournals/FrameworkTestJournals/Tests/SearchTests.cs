@@ -1,46 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using ParserExcel;
-using FrameworkTestJournals.DataProviders;
-using ParserExcel.Search;
 using FrameworkTestJournals.Steps;
+using FrameworkTestJournals.Settings;
+using FrameworkTestJournals.DataProviders;
 
 namespace FrameworkTestJournals.Tests
 {
-   // [TestFixture]
-   // [Parallelizable(ParallelScope.Fixtures)]
+    [TestFixture]
+    [Parallelizable(ParallelScope.Fixtures)]
     class SearchTests : BaseTest
     {
-
-        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
-        public static void PositiveSearchWordTest(Journal currentJournal)
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        public static void PositiveSearchWordTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(currentJournal.JournalName);
+            StepOpen.OpenPageWithJournal(journalName);
             StepSearch.SearchQuery("Journal");
 
             Assert.True(StepFind.SearchResultIsDisplayed(), $"Problem in journal {currentJournal.JournalName}");
         }
 
-       // [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
-        public static void NegativeSearchWordTest(Journal currentJournal)
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        public static void NegativeSearchWordTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(currentJournal.JournalName);
+            StepOpen.OpenPageWithJournal(journalName);
             StepSearch.SearchQuery("fjng67%&");
 
             Assert.True(StepFind.ErrorWindowIsEnabled(), $"Problem in journal {currentJournal.JournalName}");
         }
 
-        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
-        public static void PositiveSearchArticleTest(Journal currentJournal)
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        public static void PositiveSearchArticleTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(currentJournal.JournalName);
+            StepOpen.OpenPageWithJournal(journalName);
             JournalPage journalPage = new JournalPage();
             StepSearch.SearchQuery(journalPage.ArticleName.Text);
 

@@ -76,19 +76,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataFromXML\AdvansedSearchData.cs" />
+    <Compile Include="DataFromXML\LogInData\AllUsers.cs" />
+    <Compile Include="DataFromXML\LogInData\User.cs" />
+    <Compile Include="DataFromXML\SearchData\AllSearches.cs" />
+    <Compile Include="DataFromXML\SearchData\Search.cs" />
     <Compile Include="DataProviders\JournalsProvider.cs" />
     <Compile Include="DataProviders\UserProviders.cs" />
-    <Compile Include="DataFromXML\GetDataFromXML.cs" />
     <Compile Include="PageObject\AdvancedSearchForm.cs" />
     <Compile Include="PageObject\HomePage.cs" />
     <Compile Include="PageObject\LogInForm.cs" />
     <Compile Include="PageObject\SearchForm.cs" />
-    <Compile Include="SettingsNameBrowser.Designer.cs">
+    <Compile Include="Settings\SettingsNameBrowser.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>SettingsNameBrowser.settings</DependentUpon>
     </Compile>
-    <Compile Include="SettingsPath.Designer.cs">
+    <Compile Include="Settings\SettingsPath.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>SettingsPath.settings</DependentUpon>
@@ -97,6 +101,7 @@
     <Compile Include="Steps\StepLogIn.cs" />
     <Compile Include="Steps\StepOpen.cs" />
     <Compile Include="Steps\StepSearch.cs" />
+    <Compile Include="Steps\StepSerialization.cs" />
     <Compile Include="Tests\AdvancedSearchTests.cs" />
     <Compile Include="Tests\LogInTests.cs" />
     <Compile Include="PageObject\JournalPage.cs" />
@@ -111,11 +116,11 @@
     <None Include="app.config" />
     <None Include="browserConfiguration.config" />
     <None Include="packages.config" />
-    <None Include="SettingsNameBrowser.settings">
+    <None Include="Settings\SettingsNameBrowser.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>SettingsNameBrowser.Designer.cs</LastGenOutput>
     </None>
-    <None Include="SettingsPath.settings">
+    <None Include="Settings\SettingsPath.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>SettingsPath.Designer.cs</LastGenOutput>
     </None>
@@ -124,7 +129,10 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataAdvansedSearch.xml" />
+    <Content Include="TestData\DataAdvansedSearch.xml" />
+    <Content Include="TestData\DataSearch.xml" />
+    <Content Include="TestData\NegativeDataForLogIn.xml" />
+    <Content Include="TestData\PositiveDataForLogIn.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.27.0\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.27.0\build\Selenium.WebDriver.ChromeDriver.targets')" />

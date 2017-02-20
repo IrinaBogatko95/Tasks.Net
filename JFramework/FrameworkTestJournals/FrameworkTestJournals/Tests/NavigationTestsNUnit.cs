@@ -1,26 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using ParserExcel;
-using System.Collections;
-using FrameworkTestJournals.DataProviders;
 using FrameworkTestJournals.Steps;
 using FrameworkTestJournals.Tests;
+using FrameworkTestJournals.Settings;
+using FrameworkTestJournals.DataProviders;
 
 namespace FrameworkTestJournals
 {
     [TestFixture]
-   // [Parallelizable(ParallelScope.Fixtures)]
+    [Parallelizable(ParallelScope.Fixtures)]
     class NavigationTestsNUnit : BaseTest
     {
        public StepFind stepFind = new StepFind();
 
-        //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
-        public void FindMenuTest(Journal currentJournal)
+        [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
+        public void FindMenuTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(currentJournal.JournalName);
+            StepOpen.OpenPageWithJournal(journalName);
             
             foreach (Menu currentMenu in currentJournal.AllMenu)
             {
