@@ -1,13 +1,8 @@
 ﻿using FrameworkTestJournals.PageObject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FrameworkTestJournals.Steps
 {
-    class StepFind
+    public class StepFind
     {
 
         public bool MenuNavigationIsEnabled(string elementName)

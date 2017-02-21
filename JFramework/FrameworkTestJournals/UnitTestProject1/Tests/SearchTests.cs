@@ -1,8 +1,8 @@
 ﻿using NUnit.Framework;
 using ParserExcel;
 using FrameworkTestJournals.Steps;
-using FrameworkTestJournals.Settings;
 using FrameworkTestJournals.DataProviders;
+using UnitTestProject1.Settings;
 
 namespace FrameworkTestJournals.Tests
 {

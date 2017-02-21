@@ -1,9 +1,9 @@
-﻿using NUnit.Framework;
-using ParserExcel;
+﻿using ParserExcel;
+using NUnit.Framework;
+using FrameworkTestJournals.DataFromXML;
 using FrameworkTestJournals.DataProviders;
 using FrameworkTestJournals.Steps;
-using FrameworkTestJournals.DataFromXML;
-using FrameworkTestJournals.Settings;
+using UnitTestProject1.Settings;
 
 namespace FrameworkTestJournals.Tests
 {
@@ -74,7 +74,7 @@ namespace FrameworkTestJournals.Tests
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
             StepOpen.OpenPageWithJournal(journalName);
-            StepSearch.AdvansedSearchQuery(data.Issue, 6);
+            StepSearch.AdvansedSearchQuery(data.Issue, 7);
 
             Assert.True(StepFind.SearchResultIsDisplayed());
         }

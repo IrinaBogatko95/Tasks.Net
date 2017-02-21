@@ -11,7 +11,7 @@ using OpenQA.Selenium.IE;
 
 namespace FrameworkTestJournals
 {
-    class WebDriver
+    public class WebDriver
     {
         private WebDriver() { }
 

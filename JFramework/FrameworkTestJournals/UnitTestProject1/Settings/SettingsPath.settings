@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FrameworkTestJournals.Settings" GeneratedClassName="SettingsPath">
+  <Profiles />
+  <Settings>
+    <Setting Name="Path_Batch3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\JFramework\\Responsive-Batch-3.xlsx</Value>
+    </Setting>
+    <Setting Name="UsersNegative" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\JFramework\\NegativeLogInInfo.xlsx</Value>
+    </Setting>
+    <Setting Name="SearchPositive" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\JFramework\\PositiveSearch.xlsx</Value>
+    </Setting>
+    <Setting Name="SearchNegative" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\JFramework\\NegativeSearch.xlsx</Value>
+    </Setting>
+    <Setting Name="DataAdvansedSearch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\JFramework\\FrameworkTestJournals\\FrameworkTestJournals\\TestData\\DataAdvansedSearch.xml</Value>
+    </Setting>
+    <Setting Name="PositiveDataLogIn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\JFramework\\FrameworkTestJournals\\FrameworkTestJournals\\TestData\\PositiveDataForLogIn.xml</Value>
+    </Setting>
+    <Setting Name="NegativeDataLogIn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\JFramework\\FrameworkTestJournals\\FrameworkTestJournals\\TestData\\NegativeDataForLogIn.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

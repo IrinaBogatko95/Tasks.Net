@@ -2,8 +2,8 @@
 using ParserExcel;
 using FrameworkTestJournals.Steps;
 using FrameworkTestJournals.Tests;
-using FrameworkTestJournals.Settings;
 using FrameworkTestJournals.DataProviders;
+using UnitTestProject1.Settings;
 
 namespace FrameworkTestJournals
 {

@@ -1,15 +1,8 @@
 ﻿using FrameworkTestJournals.PageObject;
-using ParserExcel.LogIn;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using System.Threading.Tasks;
 
 namespace FrameworkTestJournals.Steps
 {
-     class StepLogIn 
+    public class StepLogIn 
     {
         public LogInForm logInForm = new LogInForm();
 

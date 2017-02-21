@@ -2,13 +2,14 @@
 using FrameworkTestJournals.Steps;
 using ParserExcel.LogIn;
 using FrameworkTestJournals.Tests;
-using FrameworkTestJournals.Settings;
 using FrameworkTestJournals.DataProviders;
 using FrameworkTestJournals.DataFromXML;
+using UnitTestProject1.Settings;
 
 namespace FrameworkTestJournals
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.Fixtures)]
     public class LogInTests : BaseTest
     {
         StepLogIn stepLogIn = new StepLogIn();

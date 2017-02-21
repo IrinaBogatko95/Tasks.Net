@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace FrameworkTestJournals.DataProviders
 {
     //Provides journals one by one
-    class JournalsProvider
+   public class JournalsProvider
     {
         public static IEnumerable TestCaseWithJournals()
         {

@@ -1,14 +1,9 @@
 ﻿using FrameworkTestJournals.PageObject;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FrameworkTestJournals.Steps
 {
-    class StepSearch
+   public class StepSearch
     {
         public static void SearchQuery(string query)
         {

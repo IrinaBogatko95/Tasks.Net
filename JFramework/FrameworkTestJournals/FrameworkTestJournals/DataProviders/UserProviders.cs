@@ -2,15 +2,12 @@
 using FrameworkTestJournals.Settings;
 using FrameworkTestJournals.Steps;
 using NUnit.Framework;
-using ParserExcel;
-using ParserExcel.LogIn;
 using System.Collections;
-using System.Collections.Generic;
 
 namespace FrameworkTestJournals.DataProviders
 {
     //Provides user with username and password
-    class UserProviders
+    public class UserProviders
     {
         public static IEnumerable PositiveTestCaseWithUsers()
         {
