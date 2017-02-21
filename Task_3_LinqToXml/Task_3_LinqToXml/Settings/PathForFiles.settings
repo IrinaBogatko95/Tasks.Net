@@ -20,5 +20,8 @@
     <Setting Name="SortedMonthAndYearFirstOrder" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Task_3_LinqToXml\\results\\SortedMonthAndYearFirstOrder.txt</Value>
     </Setting>
+    <Setting Name="CustomersWithInvalidData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Task_3_LinqToXml\\results\\CustomersWithInvalidData.txt</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

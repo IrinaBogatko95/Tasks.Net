@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using NUnit.Framework;
+﻿using System.IO;
+using Task_3_LinqToXml.Settings;
 
 namespace Task_3_LinqToXml
 {
@@ -18,7 +12,7 @@ namespace Task_3_LinqToXml
             getCustomers = new GetSortedCustomers();
             var customers = getCustomers.GetCustomersWithOrderMoreX(x);                         
 
-            using (StreamWriter sw = new StreamWriter(Settings1.Default.OrderMoreThanX, false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter(PathForFiles.Default.OrderMoreThanX, false, System.Text.Encoding.Default))
             {                
                 sw.WriteLine($"Customers, which have orders with sum more than {x}: ");
                 sw.WriteLine("");
@@ -34,7 +28,7 @@ namespace Task_3_LinqToXml
             getCustomers = new GetSortedCustomers();
             var customers = getCustomers.GetCustomersWithTurnoverMoreX(x);
 
-            using (StreamWriter sw = new StreamWriter(Settings1.Default.TotalTurnoverMoreThanX, false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter(PathForFiles.Default.TotalTurnoverMoreThanX, false, System.Text.Encoding.Default))
             {
                 sw.WriteLine($"Customers, whose total turnover (sum of all orders) exceeds the value of {x}: ");
                 sw.WriteLine("");
@@ -51,7 +45,7 @@ namespace Task_3_LinqToXml
             var customersWithDate = getCustomers.GetCustomersWithDateFirstOrder();
 
 
-            using (StreamWriter sw = new StreamWriter(Settings1.Default.MonthAndYearFirstOrder, false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter(PathForFiles.Default.MonthAndYearFirstOrder, false, System.Text.Encoding.Default))
             {
                 sw.WriteLine("Month and year of first order of each customer: ");
                 sw.WriteLine("");
@@ -67,7 +61,7 @@ namespace Task_3_LinqToXml
             getCustomers = new GetSortedCustomers();
             var customersSorted = getCustomers.GetCustomersSortedByCountry();
 
-            using (StreamWriter sw = new StreamWriter(Settings1.Default.SortByCountries, false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter(PathForFiles.Default.SortByCountries, false, System.Text.Encoding.Default))
             {
                 sw.WriteLine("Customers, sorted by country: ");
                 foreach (var sortedCustomer in customersSorted)
@@ -85,7 +79,7 @@ namespace Task_3_LinqToXml
             var customersSortedByTurnover = getCustomers.GetCustomersSortedByTurnover();
             var customersSortedByName = getCustomers.GetCustomersSortedByName();
 
-            using (StreamWriter sw = new StreamWriter(Settings1.Default.SortedMonthAndYearFirstOrder, false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter(PathForFiles.Default.SortedMonthAndYearFirstOrder, false, System.Text.Encoding.Default))
             {
                 sw.WriteLine("Month and year of first order of each customer, sorted by month: ");
                 sw.WriteLine("");
@@ -113,6 +107,22 @@ namespace Task_3_LinqToXml
                 foreach (var someCustomer in customersSortedByName)
                 {
                     sw.WriteLine(someCustomer);
+                }
+            }
+        }
+
+        public void CustomersWithInvalidData()
+        {
+            getCustomers = new GetSortedCustomers();
+            var customersSorted = getCustomers.GetCustomersWithInvalidData();
+
+            using (StreamWriter sw = new StreamWriter(PathForFiles.Default.CustomersWithInvalidData, false, System.Text.Encoding.Default))
+            {
+                sw.WriteLine("Customers with invalid data of region, postalcode or phone: ");
+                sw.WriteLine("");
+                foreach (var sortedCustomer in customersSorted)
+                {
+                    sw.WriteLine(sortedCustomer);
                 }
             }
         }

@@ -1,16 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Task_3_LinqToXml;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Task_3_LinqToXml;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Task_3_LinqToXml.Tests
 {
     [TestClass()]
     public class SorterXmlTests
     {
+
         [TestMethod()]
         public void OrderMoreThanXTest()
         {
@@ -44,6 +40,13 @@ namespace Task_3_LinqToXml.Tests
         {
             var sorterXml = new SorterXml();
             sorterXml.SortedMonthAndYearFirstOrder();
+        }
+
+        [TestMethod()]
+        public void CustomersWithInvalidDataTest()
+        {
+            var sorterXml = new SorterXml();
+            sorterXml.CustomersWithInvalidData();
         }
     }
 }

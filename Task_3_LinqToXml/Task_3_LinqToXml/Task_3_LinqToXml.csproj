@@ -47,21 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SorterXml.cs" />
+    <Compile Include="SortCustomers\SorterXml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings1.Designer.cs">
+    <Compile Include="Settings\PathForFiles.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings1.settings</DependentUpon>
+      <DependentUpon>PathForFiles.settings</DependentUpon>
     </Compile>
-    <Compile Include="GetSortedCustomers.cs" />
+    <Compile Include="SortCustomers\GetSortedCustomers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Settings1.settings">
+    <None Include="Settings\PathForFiles.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+      <LastGenOutput>PathForFiles.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

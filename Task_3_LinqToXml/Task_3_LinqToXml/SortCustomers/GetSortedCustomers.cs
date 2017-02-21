@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
+using Task_3_LinqToXml.Settings;
 
 namespace Task_3_LinqToXml
 {
     public class GetSortedCustomers
     {
-        public XDocument xDoc = XDocument.Load(Settings1.Default.Path);
+        public XDocument xDoc = XDocument.Load(PathForFiles.Default.Path);
         public IEnumerable<XElement> allCustomers;
 
         public IEnumerable GetCustomersWithOrderMoreX(int x)
@@ -99,6 +97,20 @@ namespace Task_3_LinqToXml
                                         orderby name
                                         select $"{name}, first order - {month} , year {year}";
             return customersSortedByName;
+        }
+
+        public IEnumerable GetCustomersWithInvalidData()
+        {
+            allCustomers = xDoc.Element("customers").Elements("customer");
+            var customersWithoutCode = from customer in allCustomers.Where(e => (!e.Elements("region").Any()) ||
+                                       e.Elements("postalcode").Any() && !e.Element("postalcode").Value.All(ch => char.IsDigit(ch) || ch == '-') || 
+                                       !e.Element("phone").Value.Contains("(") && !e.Element("phone").Value.Contains(")"))
+                                       let name = customer.Element("name")?.Value
+                                       let region = customer.Element("region")?.Value
+                                       let postalcode = customer.Element("postalcode")?.Value
+                                       let phone = customer.Element("phone")?.Value
+                                       select $"{name} - region: {region}, postalcode: {postalcode}, phone: {phone} ";
+            return customersWithoutCode;
         }
     }
 }

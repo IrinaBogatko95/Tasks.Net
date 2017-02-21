@@ -1,0 +1,67 @@
+Customers with invalid data of region, postalcode or phone: 
+
+Alfreds Futterkiste - region: , postalcode: 12209, phone: 030-0074321 
+Ana Trujillo Emparedados y helados - region: , postalcode: 05021, phone: (5) 555-4729 
+Antonio Moreno Taquería - region: , postalcode: 05023, phone: (5) 555-3932 
+Around the Horn - region: , postalcode: WA1 1DP, phone: (171) 555-7788 
+Berglunds snabbköp - region: , postalcode: S-958 22, phone: 0921-12 34 65 
+Blauer See Delikatessen - region: , postalcode: 68306, phone: 0621-08460 
+Blondel père et fils - region: , postalcode: 67000, phone: 88.60.15.31 
+Bólido Comidas preparadas - region: , postalcode: 28023, phone: (91) 555 22 82 
+Bon app' - region: , postalcode: 13008, phone: 91.24.45.40 
+Bottom-Dollar Markets - region: BC, postalcode: T2F 8M4, phone: (604) 555-4729 
+B's Beverages - region: , postalcode: EC2 5NT, phone: (171) 555-1212 
+Cactus Comidas para llevar - region: , postalcode: 1010, phone: (1) 135-5555 
+Centro comercial Moctezuma - region: , postalcode: 05022, phone: (5) 555-3392 
+Chop-suey Chinese - region: , postalcode: 3012, phone: 0452-076545 
+Consolidated Holdings - region: , postalcode: WX1 6LT, phone: (171) 555-2282 
+Drachenblut Delikatessen - region: , postalcode: 52066, phone: 0241-039123 
+Du monde entier - region: , postalcode: 44000, phone: 40.67.88.88 
+Eastern Connection - region: , postalcode: WX3 6FW, phone: (171) 555-0297 
+Ernst Handel - region: , postalcode: 8010, phone: 7675-3425 
+FISSA Fabrica Inter. Salchichas S.A. - region: , postalcode: 28034, phone: (91) 555 94 44 
+Folies gourmandes - region: , postalcode: 59000, phone: 20.16.10.16 
+Folk och fä HB - region: , postalcode: S-844 67, phone: 0695-34 67 21 
+Frankenversand - region: , postalcode: 80805, phone: 089-0877310 
+France restauration - region: , postalcode: 44000, phone: 40.32.21.21 
+Franchi S.p.A. - region: , postalcode: 10100, phone: 011-4988260 
+Furia Bacalhau e Frutos do Mar - region: , postalcode: 1675, phone: (1) 354-2534 
+Galería del gastrónomo - region: , postalcode: 08022, phone: (93) 203 4560 
+Godos Cocina Típica - region: , postalcode: 41101, phone: (95) 555 82 82 
+Hungry Owl All-Night Grocers - region: Co. Cork, postalcode: , phone: 2967 542 
+Island Trading - region: Isle of Wight, postalcode: PO31 7PJ, phone: (198) 555-8888 
+Königlich Essen - region: , postalcode: 14776, phone: 0555-09876 
+La corne d'abondance - region: , postalcode: 78000, phone: 30.59.84.10 
+La maison d'Asie - region: , postalcode: 31000, phone: 61.77.61.10 
+Laughing Bacchus Wine Cellars - region: BC, postalcode: V3F 2K1, phone: (604) 555-3392 
+Lehmanns Marktstand - region: , postalcode: 60528, phone: 069-0245984 
+Magazzini Alimentari Riuniti - region: , postalcode: 24100, phone: 035-640230 
+Maison Dewey - region: , postalcode: B-1180, phone: (02) 201 24 67 
+Mère Paillarde - region: Québec, postalcode: H1J 1C3, phone: (514) 555-8054 
+Morgenstern Gesundkost - region: , postalcode: 04179, phone: 0342-023176 
+North/South - region: , postalcode: SW7 1RZ, phone: (171) 555-7733 
+Océano Atlántico Ltda. - region: , postalcode: 1010, phone: (1) 135-5333 
+Ottilies Käseladen - region: , postalcode: 50739, phone: 0221-0644327 
+Paris spécialités - region: , postalcode: 75012, phone: (1) 42.34.22.66 
+Pericles Comidas clásicas - region: , postalcode: 05033, phone: (5) 552-3745 
+Piccolo und mehr - region: , postalcode: 5020, phone: 6562-9722 
+Princesa Isabel Vinhos - region: , postalcode: 1756, phone: (1) 356-5634 
+QUICK-Stop - region: , postalcode: 01307, phone: 0372-035188 
+Rancho grande - region: , postalcode: 1010, phone: (1) 123-5555 
+Reggiani Caseifici - region: , postalcode: 42100, phone: 0522-556721 
+Richter Supermarkt - region: , postalcode: 1203, phone: 0897-034214 
+Romero y tomillo - region: , postalcode: 28001, phone: (91) 745 6200 
+Santé Gourmet - region: , postalcode: 4110, phone: 07-98 92 35 
+Seven Seas Imports - region: , postalcode: OX15 4NB, phone: (171) 555-1717 
+Simons bistro - region: , postalcode: 1734, phone: 31 12 34 56 
+Spécialités du monde - region: , postalcode: 75016, phone: (1) 47.55.60.10 
+Suprêmes délices - region: , postalcode: B-6000, phone: (071) 23 67 22 20 
+Toms Spezialitäten - region: , postalcode: 44087, phone: 0251-031259 
+Tortuga Restaurante - region: , postalcode: 05033, phone: (5) 555-2933 
+Vaffeljernet - region: , postalcode: 8200, phone: 86 21 32 43 
+Victuailles en stock - region: , postalcode: 69004, phone: 78.32.54.86 
+Vins et alcools Chevalier - region: , postalcode: 51100, phone: 26.47.15.10 
+Die Wandernde Kuh - region: , postalcode: 70563, phone: 0711-020361 
+Wartian Herkku - region: , postalcode: 90110, phone: 981-443655 
+Wilman Kala - region: , postalcode: 21240, phone: 90-224 8858 
+Wolski  Zajazd - region: , postalcode: 01-012, phone: (26) 642-7012 

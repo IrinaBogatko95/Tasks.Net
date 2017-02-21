@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Task_3_LinqToXml {
+namespace Task_3_LinqToXml.Settings {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    internal sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class PathForFiles : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
+        private static PathForFiles defaultInstance = ((PathForFiles)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new PathForFiles())));
         
-        public static Settings1 Default {
+        public static PathForFiles Default {
             get {
                 return defaultInstance;
             }
@@ -98,6 +98,19 @@ namespace Task_3_LinqToXml {
             }
             set {
                 this["SortedMonthAndYearFirstOrder"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Task_3_LinqToXml\\\\results\\\\Custo" +
+            "mersWithInvalidData.txt")]
+        public string CustomersWithInvalidData {
+            get {
+                return ((string)(this["CustomersWithInvalidData"]));
+            }
+            set {
+                this["CustomersWithInvalidData"] = value;
             }
         }
     }
