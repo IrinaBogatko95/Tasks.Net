@@ -16,8 +16,8 @@ namespace Serialization
         [XmlAttribute("id")]
         public string Id { get; set; } 
 
-       // [XmlElement("isbn")]
-        //public string Isbn { get; set; }
+        [XmlElement("isbn")]
+        public string Isbn { get; set; }
 
         [XmlElement("author")]
         public string Author { get; set; }
@@ -52,11 +52,11 @@ namespace Serialization
             { registrationDate = DateTime.Parse(value); }
         }
 
-        public Book(string id, string author, string isbn, string title, Genre genre, string publisher,
+        public Book(string id, string isbn, string author, string title, Genre genre, string publisher,
             string publishDate, string description, string registrationDate)
         {
             this.Id = id;
-           // this.Isbn = isbn;
+            this.Isbn = isbn;
             this.Author = author;
             this.Title = title;
             this.Genre = genre;
@@ -69,12 +69,6 @@ namespace Serialization
         public Book()
         {
 
-        }
-
-        private static DateTimeFormatInfo GetFormat()
-        {
-            var format = new DateTimeFormatInfo { DateSeparator = "-", ShortDatePattern = "yyyy-MM-dd" };
-            return format;
         }
     }
 

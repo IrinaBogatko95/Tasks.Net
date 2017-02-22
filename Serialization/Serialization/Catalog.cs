@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace Serialization
 {
-    [XmlRootAttribute(Namespace = "http://library.by/catalog")]
+    [XmlRoot("catalog", Namespace = "http://library.by/catalog")]
     public class Catalog
     {
         [XmlElement("book")]
