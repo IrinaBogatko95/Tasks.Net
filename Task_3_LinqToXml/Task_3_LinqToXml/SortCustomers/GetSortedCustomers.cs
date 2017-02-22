@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using Task_3_LinqToXml.Settings;
@@ -112,5 +114,34 @@ namespace Task_3_LinqToXml
                                        select $"{name} - region: {region}, postalcode: {postalcode}, phone: {phone} ";
             return customersWithoutCode;
         }
+
+//        public IEnumerable AverageProfitabilityForEachTown()
+//        {
+//            allCustomers = xDoc.Element("customers").Elements("customer");
+
+//            var customers = from customer in allCustomers
+//                            let country = customer.Element("country").Value
+//                            let city = customer.Element("city").Value
+//                            orderby city
+//                            let average = city.Average(nextCustomer =>
+//                            nextCustomer.Descendants("total").Sum(e => double.Parse(e.Value)))
+//                            select city.Average(nextCustomer => nextCustomer.Descendants("total").Sum(e => double.Parse(e.Value)));
+
+//var groupedByCountryCustomers = from customer in allCustomers
+//                    .GroupBy(e => e.Element("country").Value)
+
+//                                            select customer;
+
+//            var City = from country in groupedByCountryCustomers
+//                       let selectedCountry = country.GroupBy(e => e.Element("city").Value)
+//                       select selectedCountry;
+
+
+//            //var grouped = from city in City
+//            //              let average = city.Average(nextCustomer =>
+//            //             nextCustomer.Descendants("total").Sum(e => double.Parse(e.Value)))
+//            //              select $"{city.ToString()} - average: {average}";
+//            return customers;
+//        }
     }
 }

@@ -3,7 +3,7 @@ using Task_3_LinqToXml.Settings;
 
 namespace Task_3_LinqToXml
 {
-   public class SorterXml
+   public class WritertoFile
     {
         public GetSortedCustomers getCustomers;
 
@@ -126,5 +126,20 @@ namespace Task_3_LinqToXml
                 }
             }
         }
+
+        //public void Average()
+        //{
+        //    getCustomers = new GetSortedCustomers();
+        //    var customersSorted = getCustomers.AverageProfitabilityForEachTown();
+
+        //    using (StreamWriter sw = new StreamWriter(PathForFiles.Default.AverageCity, false, System.Text.Encoding.Default))
+        //    {
+        //        foreach (var sortedCustomer in customersSorted)
+        //        {
+        //            sw.WriteLine(sortedCustomer);
+        //        }
+        //    }
+        //}
+
     }
 }

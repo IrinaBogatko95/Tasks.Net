@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Task_3_LinqToXml" GeneratedClassName="Settings1">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Task_3_LinqToXml.Settings" GeneratedClassName="PathForFiles">
   <Profiles />
   <Settings>
     <Setting Name="Path" Type="System.String" Scope="User">
@@ -22,6 +22,9 @@
     </Setting>
     <Setting Name="CustomersWithInvalidData" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Task_3_LinqToXml\\results\\CustomersWithInvalidData.txt</Value>
+    </Setting>
+    <Setting Name="AverageCity" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\Iryna_Bahatka1\\Documents\\Tasks.Net\\Task_3_LinqToXml\\results\\AverageCity.txt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

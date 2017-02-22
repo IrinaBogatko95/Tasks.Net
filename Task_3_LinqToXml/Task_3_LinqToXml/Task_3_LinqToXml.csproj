@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SortCustomers\SorterXml.cs" />
+    <Compile Include="SortCustomers\WriterToFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\PathForFiles.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -1,52 +1,53 @@
-﻿using Task_3_LinqToXml;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Task_3_LinqToXml;
 
 namespace Task_3_LinqToXml.Tests
 {
     [TestClass()]
     public class SorterXmlTests
     {
+        public static WritertoFile writerToFile;
+
+        [ClassInitialize]
+        public static void SetUp(TestContext context)
+        {
+           writerToFile = new WritertoFile();
+        }
 
         [TestMethod()]
         public void OrderMoreThanXTest()
         {
-            var sorterXml = new SorterXml();
-            sorterXml.OrderMoreThanX(10000);
+            writerToFile.OrderMoreThanX(10000);
         }
 
         [TestMethod()]
         public void GroupByCountriesTestTest()
         {
-            var sorterXml = new SorterXml();
-            sorterXml.GroupByCountries();
+            writerToFile.GroupByCountries();
         }
 
         [TestMethod()]
         public void MonthAndYearFirstOrderTestTest()
         {
-            var sorterXml = new SorterXml();
-            sorterXml.MonthAndYearFirstOrder();
+            writerToFile.MonthAndYearFirstOrder();
         }
 
         [TestMethod()]
         public void TotalTurnoverMoreThanXTestTest()
         {
-            var sorterXml = new SorterXml();
-            sorterXml.TotalTurnoverMoreThanX(20000);
+            writerToFile.TotalTurnoverMoreThanX(20000);
         }
 
         [TestMethod()]
         public void SortedMonthAndYearFirstOrderTest()
         {
-            var sorterXml = new SorterXml();
-            sorterXml.SortedMonthAndYearFirstOrder();
+            writerToFile.SortedMonthAndYearFirstOrder();
         }
 
         [TestMethod()]
         public void CustomersWithInvalidDataTest()
         {
-            var sorterXml = new SorterXml();
-            sorterXml.CustomersWithInvalidData();
+            writerToFile.CustomersWithInvalidData();
         }
     }
 }

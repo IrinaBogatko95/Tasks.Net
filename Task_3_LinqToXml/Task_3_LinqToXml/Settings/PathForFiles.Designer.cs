@@ -113,5 +113,18 @@ namespace Task_3_LinqToXml.Settings {
                 this["CustomersWithInvalidData"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\Iryna_Bahatka1\\\\Documents\\\\Tasks.Net\\\\Task_3_LinqToXml\\\\results\\\\Avera" +
+            "geCity.txt")]
+        public string AverageCity {
+            get {
+                return ((string)(this["AverageCity"]));
+            }
+            set {
+                this["AverageCity"] = value;
+            }
+        }
     }
 }
