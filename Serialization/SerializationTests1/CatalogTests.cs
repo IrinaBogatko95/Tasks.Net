@@ -16,13 +16,13 @@ namespace Serialization.Tests
         public void SerialiseTest()
         {
             var catalog = new Catalog();
-            catalog.Serialise(Settings1.Default.SerializationPath);
+            catalog.Serialise(Path.Default.SerializationPath);
         }
 
         [TestMethod()]
         public void DeserialiseTest()
         {
-            var catalog = Catalog.Deserialise(Settings1.Default.PathToDeserialize);
+            var catalog = Catalog.Deserialise(Path.Default.PathToDeserialize);
         }
     }
 }

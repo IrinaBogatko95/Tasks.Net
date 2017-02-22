@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
-using System.Xml.Schema;
 using System.Xml.Serialization;
 
 namespace Serialization
@@ -33,14 +30,14 @@ namespace Serialization
         {
             var namespaces = new XmlSerializerNamespaces();
             namespaces.Add("", "http://library.by/catalog");
-            var catalogSerialiser = new XmlSerializer(typeof(Catalog));
-            catalogSerialiser.Serialize(new XmlTextWriter(filePath, Encoding.UTF8), this, namespaces);
+            var xmlSerialiser = new XmlSerializer(typeof(Catalog));
+            xmlSerialiser.Serialize(new XmlTextWriter(filePath, Encoding.UTF8), this, namespaces);
         }
 
         public static Catalog Deserialise(string filePath)
         {
-            var catalogSerialiser = new XmlSerializer(typeof(Catalog));
-            return (Catalog)catalogSerialiser.Deserialize(new XmlTextReader(filePath));
+            var xmlSerialiser = new XmlSerializer(typeof(Catalog));
+            return (Catalog)xmlSerialiser.Deserialize(new XmlTextReader(filePath));
         }
     }
 }

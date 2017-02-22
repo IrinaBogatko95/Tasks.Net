@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Serialization\Serialization.csproj", "{42E819C2-EAE9-4E7D-A9BB-F50B08C66CEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationTests1", "SerializationTests1\SerializationTests1.csproj", "{589B974B-5333-4983-9983-2F49C2D911D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationTests", "SerializationTests1\SerializationTests.csproj", "{589B974B-5333-4983-9983-2F49C2D911D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
