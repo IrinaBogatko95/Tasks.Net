@@ -11,7 +11,7 @@ namespace FrameworkTestJournals.DataProviders
     {
         public static IEnumerable PositiveTestCaseWithUsers()
         {
-            var data = StepSerialization.GetLogInData(SettingsPath.Default.PositiveDataLogIn);
+            var data = _SerializationStep.GetLogInData(SettingsPath.Default.PositiveDataLogIn);
             foreach (User currentUser in data.Users)
             {
                 yield return new TestCaseData(currentUser.Username, currentUser.Password);
@@ -20,7 +20,7 @@ namespace FrameworkTestJournals.DataProviders
 
         public static IEnumerable NegativeTestCaseWithUsers()
         {
-            var data = StepSerialization.GetLogInData(SettingsPath.Default.NegativeDataLogIn);
+            var data = _SerializationStep.GetLogInData(SettingsPath.Default.NegativeDataLogIn);
             foreach (User currentUser in data.Users)
             {
                 yield return new TestCaseData(currentUser.Username, currentUser.Password);

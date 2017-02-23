@@ -1,7 +1,7 @@
 ﻿
 namespace FrameworkTestJournals.Steps
 {
-   public  static class StepOpen
+   public  static class _OpenStep
     {
 
         public static void OpenPageWithJournal(string journal)

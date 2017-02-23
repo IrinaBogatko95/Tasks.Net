@@ -16,67 +16,67 @@ namespace FrameworkTestJournals.Tests
         [OneTimeSetUp]
         public void GetData()
         {
-            data = StepSerialization.GetAdvansedSearchData();
+            data = _SerializationStep.GetAdvansedSearchData();
         }
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void AdvansedSearchTitleTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);      
-            StepSearch.AdvansedSearchQuery(data.Title, 2);
+            _OpenStep.OpenPageWithJournal(journalName);      
+            _SearchStep.AdvansedSearchQuery(data.Title, 2);
 
-            Assert.True(StepFind.SearchResultIsDisplayed());
+            Assert.True(_FindStep.SearchResultIsDisplayed());
         }
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void AdvansedSearchAuthorTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);
-            StepSearch.AdvansedSearchQuery(data.Author, 3);
+            _OpenStep.OpenPageWithJournal(journalName);
+            _SearchStep.AdvansedSearchQuery(data.Author, 3);
 
-            Assert.True(StepFind.SearchResultIsDisplayed());
+            Assert.True(_FindStep.SearchResultIsDisplayed());
         }
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void AdvansedSearchAbstractTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);
-            StepSearch.AdvansedSearchQuery(data.Abstract, 4);
+            _OpenStep.OpenPageWithJournal(journalName);
+            _SearchStep.AdvansedSearchQuery(data.Abstract, 4);
 
-            Assert.True(StepFind.SearchResultIsDisplayed());
+            Assert.True(_FindStep.SearchResultIsDisplayed());
         }
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void AdvansedSearchFullTextTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);
-            StepSearch.AdvansedSearchQuery(data.FullText, 5);
+            _OpenStep.OpenPageWithJournal(journalName);
+            _SearchStep.AdvansedSearchQuery(data.FullText, 5);
 
-            Assert.True(StepFind.SearchResultIsDisplayed());
+            Assert.True(_FindStep.SearchResultIsDisplayed());
         }
 
         //[Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void AdvansedSearchVolumeTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);
+            _OpenStep.OpenPageWithJournal(journalName);
             //StepSearch.AdvansedSearchQuery(StepSerialization.GetAdvansedSearchData(), 5);
 
-            Assert.True(StepFind.SearchResultIsDisplayed());
+            Assert.True(_FindStep.SearchResultIsDisplayed());
         }
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void AdvansedSearchIssueTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);
-            StepSearch.AdvansedSearchQuery(data.Issue, 7);
+            _OpenStep.OpenPageWithJournal(journalName);
+            _SearchStep.AdvansedSearchQuery(data.Issue, 7);
 
-            Assert.True(StepFind.SearchResultIsDisplayed());
+            Assert.True(_FindStep.SearchResultIsDisplayed());
         }
 
         [OneTimeTearDown]

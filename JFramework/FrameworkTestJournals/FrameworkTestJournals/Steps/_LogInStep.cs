@@ -2,7 +2,7 @@
 
 namespace FrameworkTestJournals.Steps
 {
-    public class StepLogIn 
+    public class _LogInStep 
     {
         public LogInForm logInForm = new LogInForm();
 

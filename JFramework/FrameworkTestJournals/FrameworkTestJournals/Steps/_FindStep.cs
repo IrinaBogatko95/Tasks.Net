@@ -2,7 +2,7 @@
 
 namespace FrameworkTestJournals.Steps
 {
-    public class StepFind
+    public class _FindStep
     {
 
         public bool MenuNavigationIsEnabled(string elementName)

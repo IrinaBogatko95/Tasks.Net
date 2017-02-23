@@ -3,7 +3,7 @@ using FrameworkTestJournals.Settings;
 
 namespace FrameworkTestJournals.Steps
 {
-    public class StepSerialization
+    public class _SerializationStep
     {
         public static AdvansedSearchData GetAdvansedSearchData()
         {

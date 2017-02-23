@@ -12,13 +12,13 @@ namespace FrameworkTestJournals
     [Parallelizable(ParallelScope.Fixtures)]
     public class LogInTests : BaseTest
     {
-        StepLogIn stepLogIn = new StepLogIn();
+        _LogInStep stepLogIn = new _LogInStep();
 
         [Test, TestCaseSource(typeof(UserProviders), "PositiveTestCaseWithUsers")]
         public void PositiveLogInTest(string username, string password)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenHomePage();
+            _OpenStep.OpenHomePage();
             stepLogIn.LogInUser(username, password);
 
             Assert.IsTrue(stepLogIn.LogOutButtonIsEnabled());
@@ -28,7 +28,7 @@ namespace FrameworkTestJournals
         public void NegativeLogInTest(string username, string password)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenHomePage();
+            _OpenStep.OpenHomePage();
             stepLogIn.LogInUser(username, password);
 
             Assert.IsTrue(stepLogIn.LogInButtonIsEnabled());

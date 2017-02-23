@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 
 namespace FrameworkTestJournals.Steps
 {
-   public class StepSearch
+   public class _SearchStep
     {
         public static void SearchQuery(string query)
         {

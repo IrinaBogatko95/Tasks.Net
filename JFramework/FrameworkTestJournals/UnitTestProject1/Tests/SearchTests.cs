@@ -14,31 +14,31 @@ namespace FrameworkTestJournals.Tests
         public static void PositiveSearchWordTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);
-            StepSearch.SearchQuery("Journal");
+            _OpenStep.OpenPageWithJournal(journalName);
+            _SearchStep.SearchQuery("Journal");
 
-            Assert.True(StepFind.SearchResultIsDisplayed(), $"Problem in journal {currentJournal.JournalName}");
+            Assert.True(_FindStep.SearchResultIsDisplayed(), $"Problem in journal {currentJournal.JournalName}");
         }
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void NegativeSearchWordTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);
-            StepSearch.SearchQuery("fjng67%&");
+            _OpenStep.OpenPageWithJournal(journalName);
+            _SearchStep.SearchQuery("fjng67%&");
 
-            Assert.True(StepFind.ErrorWindowIsEnabled(), $"Problem in journal {currentJournal.JournalName}");
+            Assert.True(_FindStep.ErrorWindowIsEnabled(), $"Problem in journal {currentJournal.JournalName}");
         }
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public static void PositiveSearchArticleTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);
+            _OpenStep.OpenPageWithJournal(journalName);
             JournalPage journalPage = new JournalPage();
-            StepSearch.SearchQuery(journalPage.ArticleName.Text);
+            _SearchStep.SearchQuery(journalPage.ArticleName.Text);
 
-            Assert.True(StepFind.SearchResultIsDisplayed(), $"Problem in journal {currentJournal.JournalName}");
+            Assert.True(_FindStep.SearchResultIsDisplayed(), $"Problem in journal {currentJournal.JournalName}");
         }
 
         [OneTimeTearDown]

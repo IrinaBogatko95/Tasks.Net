@@ -11,13 +11,13 @@ namespace FrameworkTestJournals
     [Parallelizable(ParallelScope.Fixtures)]
     class NavigationTestsNUnit : BaseTest
     {
-       public StepFind stepFind = new StepFind();
+       public _FindStep stepFind = new _FindStep();
 
         [Test, TestCaseSource(typeof(JournalsProvider), "TestCaseWithJournals")]
         public void FindMenuTest(Journal currentJournal, string journalName)
         {
             ChooseBrowser(SettingsNameBrowser.Default.CHROME);
-            StepOpen.OpenPageWithJournal(journalName);
+            _OpenStep.OpenPageWithJournal(journalName);
             
             foreach (Menu currentMenu in currentJournal.AllMenu)
             {

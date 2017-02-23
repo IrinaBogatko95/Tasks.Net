@@ -97,11 +97,11 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Steps\StepFind.cs" />
-    <Compile Include="Steps\StepLogIn.cs" />
-    <Compile Include="Steps\StepOpen.cs" />
-    <Compile Include="Steps\StepSearch.cs" />
-    <Compile Include="Steps\StepSerialization.cs" />
+    <Compile Include="Steps\_FindStep.cs" />
+    <Compile Include="Steps\_LogInStep.cs" />
+    <Compile Include="Steps\_OpenStep.cs" />
+    <Compile Include="Steps\_SearchStep.cs" />
+    <Compile Include="Steps\_SerializationStep.cs" />
     <Compile Include="PageObject\JournalPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebDriver.cs" />
