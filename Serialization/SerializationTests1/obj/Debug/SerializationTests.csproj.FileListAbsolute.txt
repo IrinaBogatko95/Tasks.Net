@@ -1,0 +1,9 @@
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\SerializationTests1\obj\Debug\SerializationTests.csprojResolveAssemblyReference.cache
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\SerializationTests1\obj\Debug\SerializationTests1.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\SerializationTests1\obj\Debug\SerializationTests1.pdb
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\SerializationTests1\bin\Debug\SerializationTests1.dll.config
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\SerializationTests1\bin\Debug\SerializationTests1.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\SerializationTests1\bin\Debug\SerializationTests1.pdb
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\SerializationTests1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\SerializationTests1\bin\Debug\Serialization.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\SerializationTests1\bin\Debug\Serialization.pdb

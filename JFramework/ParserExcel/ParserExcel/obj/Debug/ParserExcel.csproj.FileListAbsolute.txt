@@ -1,0 +1,6 @@
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\JFramework\ParserExcel\ParserExcel\bin\Debug\ParserExcel.pdb
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\JFramework\ParserExcel\ParserExcel\obj\Debug\ParserExcel.csproj.ResolveComReference.cache
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\JFramework\ParserExcel\ParserExcel\obj\Debug\ParserExcel.pdb
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\JFramework\ParserExcel\ParserExcel\bin\Debug\ParserExcel.dll.config
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\JFramework\ParserExcel\ParserExcel\bin\Debug\ParserExcel.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\JFramework\ParserExcel\ParserExcel\obj\Debug\ParserExcel.dll

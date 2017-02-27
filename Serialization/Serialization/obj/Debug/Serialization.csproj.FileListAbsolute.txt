@@ -1,0 +1,8 @@
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\Serialization\bin\Debug\Serialization.pdb
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\Serialization\obj\Debug\Serialization.csprojResolveAssemblyReference.cache
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\Serialization\obj\Debug\Serialization.pdb
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\Serialization\bin\Debug\Serialization.dll.config
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\Serialization\bin\Debug\Serialization.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\Serialization\bin\Debug\nunit.framework.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\Serialization\bin\Debug\nunit.framework.xml
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Serialization\Serialization\obj\Debug\Serialization.dll

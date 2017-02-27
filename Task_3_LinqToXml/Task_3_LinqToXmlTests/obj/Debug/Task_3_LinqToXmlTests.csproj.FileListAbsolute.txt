@@ -1,0 +1,8 @@
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Task_3_LinqToXml\Task_3_LinqToXmlTests\obj\Debug\Task_3_LinqToXmlTests.csprojResolveAssemblyReference.cache
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Task_3_LinqToXml\Task_3_LinqToXmlTests\bin\Debug\Task_3_LinqToXmlTests.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Task_3_LinqToXml\Task_3_LinqToXmlTests\bin\Debug\Task_3_LinqToXmlTests.pdb
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Task_3_LinqToXml\Task_3_LinqToXmlTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Task_3_LinqToXml\Task_3_LinqToXmlTests\bin\Debug\Task_3_LinqToXml.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Task_3_LinqToXml\Task_3_LinqToXmlTests\bin\Debug\Task_3_LinqToXml.pdb
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Task_3_LinqToXml\Task_3_LinqToXmlTests\obj\Debug\Task_3_LinqToXmlTests.dll
+C:\Users\Iryna_Bahatka1\Documents\Tasks.Net\Task_3_LinqToXml\Task_3_LinqToXmlTests\obj\Debug\Task_3_LinqToXmlTests.pdb
